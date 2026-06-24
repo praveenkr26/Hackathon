@@ -422,7 +422,7 @@ const SmartMatch = () => {
               disabled={!transcript.trim() || loading}
               id="submit-voice-search-btn"
             >
-              {loading ? '⟳ Matching...' : `🚀 ${language === 'hi' ? 'स्कीम खोजें' : 'Search Schemes'}`}
+              {loading ? (language === 'hi' ? 'खोज रहे हैं...' : 'Matching...') : `🚀 ${language === 'hi' ? 'स्कीम खोजें' : 'Search Schemes'}`}
             </button>
           </div>
         </form>
@@ -532,7 +532,7 @@ const SmartMatch = () => {
                     id="match-next-btn"
                   >
                     {loading ? (
-                      <span className="loading-spinner">⟳ Finding...</span>
+                      <span className="loading-text-loader">{language === 'hi' ? 'खोज रहे हैं...' : 'Finding...'}</span>
                     ) : step === STEPS.length - 1 ? (
                       `🎯 ${t(language, 'match.findSchemes')}`
                     ) : (

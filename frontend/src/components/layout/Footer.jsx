@@ -43,11 +43,10 @@ const Footer = () => {
             {/* Social Links */}
             <div className="footer-social">
               {[
-                { icon: '𝕏', label: 'Twitter', href: '#' },
-                { icon: 'in', label: 'LinkedIn', href: '#' },
-                { icon: 'f', label: 'Facebook', href: '#' }
+                { icon: 'in', label: 'LinkedIn', href: 'https://www.linkedin.com/in/mr-praveen-658075412' },
+                { icon: '🐙', label: 'GitHub', href: 'https://github.com/praveenkr26/Hackathon' },
               ].map(s => (
-                <a key={s.label} href={s.href} className="social-btn" aria-label={s.label}>
+                <a key={s.label} href={s.href} className="social-btn" aria-label={s.label} target="_blank" rel="noopener noreferrer">
                   {s.icon}
                 </a>
               ))}
@@ -95,7 +94,7 @@ const Footer = () => {
                 <span className="contact-icon">✉️</span>
                 <div>
                   <div className="contact-label">{t(language, 'footer.email')}</div>
-                  <a href="mailto:help@yojanasetu.in" className="contact-value">help@yojanasetu.in</a>
+                  <a href="mailto:PraveenPandit25@navgurukul.org" className="contact-value">PraveenPandit25@navgurukul.org</a>
                 </div>
               </div>
 

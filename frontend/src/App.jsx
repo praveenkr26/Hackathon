@@ -5,6 +5,7 @@ import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/common/ScrollToTop';
+import CursorFollower from './components/common/CursorFollower';
 
 // Lazy load pages for code splitting
 const Home = lazy(() => import('./pages/Home'));
@@ -52,6 +53,7 @@ const NotFound = () => (
 // Layout wrapper
 const Layout = ({ children }) => (
   <div className="app-layout">
+    <CursorFollower />
     <Navbar />
     <main className="app-main">
       {children}

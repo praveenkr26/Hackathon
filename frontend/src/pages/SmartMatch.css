@@ -283,7 +283,15 @@ html.dark .match-body::before {
 }
 
 .match-navigation .btn-primary { flex: 1; justify-content: center; }
-.loading-spinner { display: inline-block; animation: spin 1s linear infinite; }
+.loading-text-loader {
+  display: inline-block;
+  animation: loader-text-pulse 1.4s ease-in-out infinite alternate;
+}
+
+@keyframes loader-text-pulse {
+  from { opacity: 0.55; }
+  to { opacity: 1; }
+}
 
 .skip-all { text-align: center; }
 
