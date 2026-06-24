@@ -1,77 +1,98 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import './CursorFollower.css';
 
 const CursorFollower = () => {
-  const [position, setPosition] = useState({ x: -100, y: -100 });
-  const [clicked, setClicked] = useState(false);
-  const [hidden, setHidden] = useState(true);
-  const [linkHovered, setLinkHovered] = useState(false);
+  const dotRef  = useRef(null);
+  const ringRef = useRef(null);
 
   useEffect(() => {
-    // Only enable cursor follower on devices with fine pointer (mouse/trackpad)
-    // and screens larger than mobile/tablets
-    const isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
-    if (isTouchDevice || window.innerWidth <= 768) return;
+    // Only for mouse devices
+    if (window.matchMedia('(pointer: coarse)').matches) return;
+    if (window.innerWidth <= 768) return;
 
-    const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
-      setHidden(false);
+    const dot  = dotRef.current;
+    const ring = ringRef.current;
+    if (!dot || !ring) return;
+
+    // Mouse coords — updated instantly on every move
+    let mouseX = window.innerWidth  / 2;
+    let mouseY = window.innerHeight / 2;
+
+    // Ring trailing coords
+    let ringX = mouseX;
+    let ringY = mouseY;
+
+    let rafId;
+
+    // ── Move dot instantly ──────────────────────────────────────────
+    const onMouseMove = (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      // Translate from top-left; offset by half element size (5px for 10px dot)
+      dot.style.left = mouseX + 'px';
+      dot.style.top  = mouseY + 'px';
     };
 
-    const handleMouseDown = () => setClicked(true);
-    const handleMouseUp = () => setClicked(false);
-    const handleMouseLeave = () => setHidden(true);
-    const handleMouseEnter = () => setHidden(false);
-
-    const addHoverListeners = () => {
-      // Find all clickable/interactive elements
-      const elements = document.querySelectorAll(
-        'a, button, [role="button"], input, select, textarea, .option-btn, .suggestion-chip, .preset-dot, .custom-color-picker-trigger, .theme-dot, .nav-link'
-      );
-      elements.forEach(el => {
-        el.addEventListener('mouseenter', () => setLinkHovered(true));
-        el.addEventListener('mouseleave', () => setLinkHovered(false));
-      });
+    // ── Smooth ring via requestAnimationFrame lerp ──────────────────
+    const animate = () => {
+      // Lerp: ring catches up by 12% each frame (~60fps = very smooth)
+      ringX += (mouseX - ringX) * 0.12;
+      ringY += (mouseY - ringY) * 0.12;
+      ring.style.left = ringX + 'px';
+      ring.style.top  = ringY + 'px';
+      rafId = requestAnimationFrame(animate);
     };
 
-    // Attach global window event listeners
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mousedown', handleMouseDown);
-    window.addEventListener('mouseup', handleMouseUp);
-    document.addEventListener('mouseleave', handleMouseLeave);
-    document.addEventListener('mouseenter', handleMouseEnter);
-    
-    // Scan and add hover triggers
-    addHoverListeners();
+    // ── Hover effect via event delegation ──────────────────────────
+    const HOVER_SELECTOR = 'a, button, [role="button"], input, select, textarea, label';
 
-    // Listen for DOM changes to apply listeners to newly rendered items
-    const observer = new MutationObserver(() => {
-      addHoverListeners();
-    });
-    observer.observe(document.body, { childList: true, subtree: true });
+    const onMouseOver = (e) => {
+      if (e.target.closest(HOVER_SELECTOR)) {
+        dot.classList.add('cursor--hover');
+        ring.classList.add('cursor--hover');
+      }
+    };
+    const onMouseOut = (e) => {
+      if (e.target.closest(HOVER_SELECTOR)) {
+        dot.classList.remove('cursor--hover');
+        ring.classList.remove('cursor--hover');
+      }
+    };
+
+    // ── Click effect ────────────────────────────────────────────────
+    const onMouseDown = () => {
+      dot.classList.add('cursor--click');
+      ring.classList.add('cursor--click');
+    };
+    const onMouseUp = () => {
+      dot.classList.remove('cursor--click');
+      ring.classList.remove('cursor--click');
+    };
+
+    // Register all listeners
+    document.addEventListener('mousemove',  onMouseMove,  { passive: true });
+    document.addEventListener('mouseover',  onMouseOver,  { passive: true });
+    document.addEventListener('mouseout',   onMouseOut,   { passive: true });
+    document.addEventListener('mousedown',  onMouseDown,  { passive: true });
+    document.addEventListener('mouseup',    onMouseUp,    { passive: true });
+
+    // Start animation loop
+    rafId = requestAnimationFrame(animate);
 
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mousedown', handleMouseDown);
-      window.removeEventListener('mouseup', handleMouseUp);
-      document.removeEventListener('mouseleave', handleMouseLeave);
-      document.removeEventListener('mouseenter', handleMouseEnter);
-      observer.disconnect();
+      document.removeEventListener('mousemove',  onMouseMove);
+      document.removeEventListener('mouseover',  onMouseOver);
+      document.removeEventListener('mouseout',   onMouseOut);
+      document.removeEventListener('mousedown',  onMouseDown);
+      document.removeEventListener('mouseup',    onMouseUp);
+      cancelAnimationFrame(rafId);
     };
   }, []);
 
-  if (hidden) return null;
-
   return (
     <>
-      <div 
-        className={`cursor-dot ${clicked ? 'clicked' : ''} ${linkHovered ? 'hovered' : ''}`}
-        style={{ left: `${position.x}px`, top: `${position.y}px` }}
-      />
-      <div 
-        className={`cursor-ring ${clicked ? 'clicked' : ''} ${linkHovered ? 'hovered' : ''}`}
-        style={{ left: `${position.x}px`, top: `${position.y}px` }}
-      />
+      <div ref={dotRef}  className="cursor-dot"  aria-hidden="true" />
+      <div ref={ringRef} className="cursor-ring" aria-hidden="true" />
     </>
   );
 };
