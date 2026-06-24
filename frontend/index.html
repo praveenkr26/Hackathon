@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="YojanaSetu - Discover government welfare schemes you are eligible for. AI-powered matching for PM Kisan, Ayushman Bharat, PMUY, and 100+ government schemes." />
+    <meta name="keywords" content="government schemes, welfare schemes, yojana, PM Kisan, Ayushman Bharat, eligibility" />
+    <meta name="author" content="YojanaSetu" />
+    <meta property="og:title" content="YojanaSetu - Government Welfare Schemes" />
+    <meta property="og:description" content="Find all government welfare schemes you qualify for with AI-powered smart matching." />
+    <meta property="og:type" content="website" />
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Prevent FOUC — detect theme before React loads -->
+    <script>
+      (function () {
+        const saved = localStorage.getItem('yojanasetu-theme');
+        const preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        const theme = saved || preferred;
+        document.documentElement.classList.add(theme);
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+
+    <title>YojanaSetu - Discover Government Welfare Schemes</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
