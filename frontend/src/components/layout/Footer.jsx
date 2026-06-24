@@ -106,7 +106,9 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="footer-bottom">
           <div className="container footer-bottom-inner">
-            <p className="footer-copyright">{t(language, 'footer.copyright')}</p>
+            <p className="footer-copyright">
+              {t(language, 'footer.copyright')} | Made by <span style={{ fontWeight: '600', color: 'var(--text-secondary)' }}>Praveen Kumar Pandit (Navgurukul)</span>
+            </p>
             <p className="footer-disclaimer">
               {t(language, 'footer.disclaimer')}
             </p>
