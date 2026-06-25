@@ -45,15 +45,10 @@ const connectDB = async () => {
  */
 const seedDatabase = async () => {
   try {
-    const count = await Scheme.countDocuments();
-    if (count < seedData.length) {
-      logger.info('🌱 Clearing old data and seeding database with 100 schemes...');
-      await Scheme.deleteMany({}); // Clear existing to prevent duplicates
-      await Scheme.insertMany(seedData);
-      logger.info(`✅ Seeded ${seedData.length} welfare schemes successfully!`);
-    } else {
-      logger.info(`📚 Database already has ${count} schemes`);
-    }
+    logger.info('🌱 Clearing old data and seeding database with 100 rich schemes...');
+    await Scheme.deleteMany({}); // Clear existing to prevent duplicates
+    await Scheme.insertMany(seedData);
+    logger.info(`✅ Seeded ${seedData.length} welfare schemes successfully!`);
   } catch (error) {
     logger.error('Seeding failed:', error.message);
   }
