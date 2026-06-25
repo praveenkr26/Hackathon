@@ -58,9 +58,9 @@ const SchemeSchema = new mongoose.Schema({
   description: {
     type: String,
     required: [true, 'Description is required'],
-    maxlength: [2000, 'Description cannot exceed 2000 characters']
+    maxlength: [10000, 'Description cannot exceed 10000 characters']
   },
-  descriptionHindi: { type: String },
+  descriptionHindi: { type: String, maxlength: 10000 },
   category: {
     type: String,
     required: [true, 'Category is required'],
