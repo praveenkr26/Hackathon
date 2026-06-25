@@ -30,9 +30,13 @@ const connectDB = async () => {
       await seedDatabase();
     }
   } catch (error) {
-    logger.error('Failed to connect to MongoDB:', error.message);
-    logger.warn('Starting in offline mode...');
-    // Don't crash — allow server to run without DB for demo
+    if (error.message.includes('SSL routines') || error.message.includes('MongoServerSelectionError')) {
+      logger.error('🚨 MONGODB CONNECTION BLOCKED: It looks like Render is being blocked by your MongoDB Atlas cluster.');
+      logger.error('👉 HOW TO FIX: Go to MongoDB Atlas -> Network Access -> Add IP Address -> "Allow Access From Anywhere" (0.0.0.0/0)');
+    } else {
+      logger.error(`Failed to connect to MongoDB: ${error.message}`);
+    }
+    logger.warn('Starting in offline mode (some API features will fail)...');
   }
 };
 
