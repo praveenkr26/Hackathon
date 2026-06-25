@@ -364,37 +364,33 @@ Here are some schemes currently stored in our database for context:\n`;
     chatSession.messages.push({ role: 'user', content: message });
     const fallbackModels = [
       'gemini-2.0-flash',
-      'gemini-1.5-flash-latest',
+      'gemini-2.5-flash',
       'gemini-1.5-flash',
-      'gemini-pro',
-      'gemini-1.5-pro'
+      'gemini-1.5-flash-8b',
+      'gemini-1.5-flash-latest'
     ];
 
     let result = null;
     let lastError = null;
-    let successfulModel = null;
 
     for (const modelName of fallbackModels) {
       try {
-        logger.info(`Attempting chat with model: ${modelName}`);
         const testModel = genAI.getGenerativeModel({ model: modelName });
         const chat = testModel.startChat({
-          history: history.slice(0, history.length - 1), // passing history up to previous
+          history: history.slice(0, history.length - 1),
           generationConfig: { maxOutputTokens: 1000 }
         });
         
         result = await chat.sendMessage(history[history.length - 1].parts[0].text);
-        successfulModel = modelName;
-        logger.info(`✅ Successfully generated content using model: ${successfulModel}`);
         break; // Break the loop if successful
       } catch (err) {
-        logger.warn(`❌ Model ${modelName} failed: ${err.message}`);
+        console.warn(`Model ${modelName} failed:`, err.message);
         lastError = err;
       }
     }
 
     if (!result) {
-      throw new Error(`All fallback models failed. Last error: ${lastError.message}`);
+      throw new Error(`All flash models failed to connect. Last error: ${lastError.message}`);
     }
     const responseText = result.response.text();
 
