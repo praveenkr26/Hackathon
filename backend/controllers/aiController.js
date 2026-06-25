@@ -11,7 +11,7 @@ const initGemini = () => {
     try {
       const { GoogleGenerativeAI } = require('@google/generative-ai');
       genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-      model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro' });
+      model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
       logger.info('✅ Gemini AI initialized');
     } catch (err) {
       logger.warn('Gemini AI initialization failed:', err.message);
@@ -365,8 +365,7 @@ Here are some schemes currently stored in our database for context:\n`;
 
     const chat = model.startChat({
       history: history.slice(0, history.length - 1), // passing history up to previous
-      generationConfig: { maxOutputTokens: 1000 },
-      tools: [{ googleSearchRetrieval: { dynamicRetrievalConfig: { mode: 'MODE_DYNAMIC', dynamicThreshold: 0.3 } } }] // Enable Google Search Grounding for real-time scheme data
+      generationConfig: { maxOutputTokens: 1000 }
     });
 
     const result = await chat.sendMessage(history[history.length - 1].parts[0].text);
