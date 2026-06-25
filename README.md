@@ -1,7 +1,5 @@
 <div align="center">
- <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/8540b2b0-daef-4f3a-8fb0-371f32546fcf" />
-
-  
+ 
   # YojanaSetu (योजनासेतु)
   **Your AI-Powered Bridge to Indian Government Welfare Schemes**
   
@@ -19,15 +17,17 @@
 
 ---
 
-## 📸 Screenshots
+## 📸 Some Screenshots
 
 <div align="center">
   
   ### 1. Home Dashboard & AI Smart Match
-  <img src="https://via.placeholder.com/800x450.png?text=Screenshot+1:+Home+Page+%26+Smart+Match" alt="Home Page Screenshot" width="800" />
-  
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/df229007-2a3e-4b96-8dcf-82b6f4125766" />
+
+
   ### 2. Scheme Discovery & Glassmorphism UI
-  <img src="https://via.placeholder.com/800x450.png?text=Screenshot+2:+Scheme+Cards+%26+UI" alt="Schemes Screenshot" width="800" />
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/b4819cd3-b11b-4596-a28d-e1dbe8497336" />
+
 
   ### 3. Real-time AI Assistant Chatbot
   <img src="https://via.placeholder.com/800x450.png?text=Screenshot+3:+AI+Chatbot+with+Speech" alt="Chatbot Screenshot" width="800" />
