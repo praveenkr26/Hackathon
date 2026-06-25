@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { aiAPI } from '../../services/api';
 import { useLanguage } from '../../context/LanguageContext';
+import useSpeech from '../../hooks/useSpeech';
 import './SchemeChatbot.css';
 
 const SchemeChatbot = () => {
@@ -13,6 +14,7 @@ const SchemeChatbot = () => {
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef(null);
   const { language } = useLanguage();
+  const { speak, stop, isSpeaking } = useSpeech();
 
   // Load chat history on mount and when chatbot is opened
   useEffect(() => {
@@ -72,6 +74,7 @@ const SchemeChatbot = () => {
       const res = await aiAPI.chat(payload);
       
       setMessages(prev => [...prev, { role: 'model', content: res.data.message }]);
+      speak(res.data.message); // Auto speak
       
       // If it was a new chat, we need to refresh history and set active session
       if (!activeSessionId && res.data.sessionId) {
@@ -80,7 +83,8 @@ const SchemeChatbot = () => {
       }
     } catch (err) {
       console.error('Chat error', err);
-      setMessages(prev => [...prev, { role: 'model', content: '⚠️ Sorry, I encountered an error connecting to AI.' }]);
+      const errorMessage = err.response?.data?.error || err.message || '⚠️ Sorry, I encountered an error connecting to AI.';
+      setMessages(prev => [...prev, { role: 'model', content: `⚠️ ${errorMessage}` }]);
     } finally {
       setLoading(false);
     }
@@ -147,8 +151,22 @@ const SchemeChatbot = () => {
               {messages.map((msg, i) => (
                 <div key={i} className={`message ${msg.role}`}>
                   {msg.role === 'model' ? (
-                    <div className="message-markdown">
+                    <div className="message-markdown" style={{ position: 'relative' }}>
                       <ReactMarkdown>{msg.content}</ReactMarkdown>
+                      {/* Speech Controls */}
+                      <div style={{ marginTop: '8px', display: 'flex', gap: '8px' }}>
+                        <button 
+                          onClick={() => isSpeaking ? stop() : speak(msg.content)}
+                          style={{
+                            background: 'transparent', border: 'none', cursor: 'pointer',
+                            fontSize: '14px', color: 'var(--text-tertiary)',
+                            padding: '4px', borderRadius: '4px', display: 'flex', alignItems: 'center', gap: '4px'
+                          }}
+                          title={isSpeaking ? 'Stop speaking' : 'Listen'}
+                        >
+                          {isSpeaking ? '⏹️ Stop' : '🔊 Listen'}
+                        </button>
+                      </div>
                     </div>
                   ) : (
                     <div>{msg.content}</div>
