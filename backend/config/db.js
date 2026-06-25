@@ -72,4 +72,4 @@ process.on('SIGTERM', async () => {
   process.exit(0);
 });
 
-module.exports = { connectDB, disconnectDB };
+module.exports = { connectDB, disconnectDB, seedDatabase };

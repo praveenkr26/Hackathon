@@ -4,7 +4,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
-const { connectDB } = require('./config/db');
+const { connectDB, seedDatabase } = require('./config/db');
 const { validateEnv } = require('./config/env');
 const logger = require('./utils/logger');
 
@@ -70,6 +70,15 @@ app.use(morgan('combined', {
 }));
 
 // ─── Routes ─────────────────────────────────────────────────────────────────
+app.get('/api/seed-database', async (req, res) => {
+  try {
+    await seedDatabase();
+    res.json({ success: true, message: 'Database successfully seeded with 100 schemes!' });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
 app.use('/api/schemes', schemeRoutes);
 app.use('/api/ai', aiRoutes);
 
