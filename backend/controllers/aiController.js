@@ -334,15 +334,17 @@ const chatWithGemini = async (req, res) => {
       });
       
       // Fetch some schemes for context
-      const schemes = await Scheme.find({ status: 'active' }).limit(50).select('name description category benefits eligibility');
+      const schemes = await Scheme.find({ status: 'active' }).limit(50).select('name description category benefits eligibility applicationUrl');
       contextStr = `System: You are an AI assistant for "YojanaSetu", a portal for Indian government welfare schemes. 
 IMPORTANT INSTRUCTION: You are NOT limited to the schemes provided below. You have access to Google Search. If a user asks about any new, state-specific, or central government scheme that is NOT in the list below, you MUST use your search capabilities to find the latest information online and provide a detailed answer.
 
+CRITICAL REQUIREMENT: Whenever you provide details about a scheme, you MUST provide the official application link or portal URL so the user can directly apply.
+
 Here are some schemes currently stored in our database for context:\n`;
       schemes.forEach(s => {
-        contextStr += `- **${s.name}** (${s.category}): ${s.description.substring(0,100)}... Benefits: ${s.benefits.map(b=>b.type).join(',')}\n`;
+        contextStr += `- **${s.name}** (${s.category}): ${s.description.substring(0,100)}... Benefits: ${s.benefits.map(b=>b.type).join(',')}. Apply Link: ${s.applicationUrl || 'Find online'}\n`;
       });
-      contextStr += `Always respond in the same language the user uses. Be concise but highly informative, using markdown for formatting.\n\n`;
+      contextStr += `Always respond in the same language the user uses. Be concise but highly informative, using beautiful markdown formatting (bolding, bullet points).\n\n`;
     }
 
     // Prepare history for Gemini API

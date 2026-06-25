@@ -4,7 +4,6 @@ import { schemeAPI } from '../services/api';
 import { useLanguage } from '../context/LanguageContext';
 import { t } from '../utils/i18n';
 import SchemeCard from '../components/ui/SchemeCard';
-import SchemeChatbot from '../components/chat/SchemeChatbot';
 import './Schemes.css';
 
 const CATEGORIES = [
@@ -224,7 +223,6 @@ const Schemes = () => {
           </div>
         )}
       </div>
-      <SchemeChatbot />
     </div>
   );
 };

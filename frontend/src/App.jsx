@@ -6,6 +6,7 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/common/ScrollToTop';
 import CursorFollower from './components/common/CursorFollower';
+import SchemeChatbot from './components/chat/SchemeChatbot';
 
 // Lazy load pages for code splitting
 const Home = lazy(() => import('./pages/Home'));
@@ -59,6 +60,7 @@ const Layout = ({ children }) => (
       {children}
     </main>
     <Footer />
+    <SchemeChatbot />
   </div>
 );
 
