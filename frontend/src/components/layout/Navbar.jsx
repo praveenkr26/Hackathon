@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { useTheme } from '../../context/ThemeContext';
 import { useLanguage } from '../../context/LanguageContext';
+import { useToast } from '../../context/ToastContext';
 import { t } from '../../utils/i18n';
 import useSpeech from '../../hooks/useSpeech';
 import './Navbar.css';
@@ -38,6 +39,7 @@ function applyColor(preset) {
 const Navbar = () => {
   const { theme, toggleTheme, isDark } = useTheme();
   const { language, toggleLanguage } = useLanguage();
+  const { addToast } = useToast();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -130,6 +132,7 @@ const Navbar = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     if (searchQuery.trim()) {
+      addToast(language === 'hi' ? 'योजनाएं खोजी जा रही हैं...' : 'Searching schemes...', 'info');
       navigate(`/schemes?search=${encodeURIComponent(searchQuery.trim())}`);
       setSearchOpen(false);
       setSearchQuery('');

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { schemeAPI } from '../services/api';
 import { useLanguage } from '../context/LanguageContext';
+import { useToast } from '../context/ToastContext';
 import { t } from '../utils/i18n';
 import SchemeCard from '../components/ui/SchemeCard';
 import './SmartMatch.css';
@@ -26,6 +27,7 @@ const STEPS = [
 
 const SmartMatch = () => {
   const { language } = useLanguage();
+  const { addToast } = useToast();
   const location = useLocation();
   const [step, setStep] = useState(0);
   const [profile, setProfile] = useState({
@@ -102,11 +104,12 @@ const SmartMatch = () => {
   };
 
   const handleVoiceSearchSubmit = async (e) => {
-    if (e) e.preventDefault();
+    e.preventDefault();
     if (!transcript.trim()) return;
 
     setLoading(true);
     setError(null);
+    addToast(language === 'hi' ? 'प्रोफ़ाइल प्रोसेस की जा रही है...' : 'Processing your profile...', 'info');
     try {
       const response = await fetch('http://localhost:5000/api/ai/profile', {
         method: 'POST',
@@ -189,6 +192,7 @@ const SmartMatch = () => {
   const handleFind = async () => {
     setLoading(true);
     setError(null);
+    addToast(language === 'hi' ? 'मिलती-जुलती योजनाएं खोजी जा रही हैं...' : 'Finding matching schemes...', 'info');
     try {
       const cleanProfile = {};
       if (profile.age) cleanProfile.age = parseInt(profile.age);

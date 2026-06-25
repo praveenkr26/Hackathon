@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { schemeAPI } from '../services/api';
 import { useLanguage } from '../context/LanguageContext';
+import { useToast } from '../context/ToastContext';
 import { t } from '../utils/i18n';
 import SchemeCard from '../components/ui/SchemeCard';
 import './Schemes.css';
@@ -14,6 +15,7 @@ const CATEGORIES = [
 
 const Schemes = () => {
   const { language } = useLanguage();
+  const { addToast } = useToast();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const [schemes, setSchemes] = useState([]);
@@ -54,6 +56,7 @@ const Schemes = () => {
     if (search) params.search = search;
     if (category !== 'all') params.category = category;
     setSearchParams(params);
+    addToast(language === 'hi' ? 'योजनाएं फिल्टर की जा रही हैं...' : 'Filtering schemes...', 'info');
   };
 
   const handleCategoryChange = (cat) => {

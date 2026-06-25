@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { LanguageProvider } from './context/LanguageContext';
+import { ToastProvider } from './context/ToastContext';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/common/ScrollToTop';
@@ -70,18 +71,20 @@ const App = () => {
       <ScrollToTop />
       <ThemeProvider>
         <LanguageProvider>
-          <Layout>
-            <Suspense fallback={<PageLoader />}>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/schemes" element={<Schemes />} />
-                <Route path="/schemes/:id" element={<SchemeDetail />} />
-                <Route path="/smart-match" element={<SmartMatch />} />
-                <Route path="/about" element={<About />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </Suspense>
-          </Layout>
+          <ToastProvider>
+            <Layout>
+              <Suspense fallback={<PageLoader />}>
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/schemes" element={<Schemes />} />
+                  <Route path="/schemes/:id" element={<SchemeDetail />} />
+                  <Route path="/smart-match" element={<SmartMatch />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </Suspense>
+            </Layout>
+          </ToastProvider>
         </LanguageProvider>
       </ThemeProvider>
     </BrowserRouter>

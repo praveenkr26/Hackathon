@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import { useToast } from '../context/ToastContext';
 import { t } from '../utils/i18n';
 import { schemeAPI } from '../services/api';
 import SchemeCard from '../components/ui/SchemeCard';
@@ -53,6 +54,7 @@ const AnimatedCounter = ({ target, suffix = '', duration = 2000 }) => {
 
 const Home = () => {
   const { language } = useLanguage();
+  const { addToast } = useToast();
   const navigate = useNavigate();
   const [featuredSchemes, setFeaturedSchemes] = useState([]);
   const [stats, setStats] = useState(null);
@@ -105,6 +107,7 @@ const Home = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     if (searchQuery.trim()) {
+      addToast(language === 'hi' ? 'योजनाएं खोजी जा रही हैं...' : 'Searching schemes...', 'info');
       navigate(`/schemes?search=${encodeURIComponent(searchQuery.trim())}`);
     } else {
       navigate('/schemes');
