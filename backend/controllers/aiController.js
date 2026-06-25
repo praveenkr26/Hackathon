@@ -1,4 +1,6 @@
 const logger = require('../utils/logger');
+const ChatSession = require('../models/ChatSession');
+const Scheme = require('../models/Scheme');
 
 let genAI = null;
 let model = null;
@@ -299,7 +301,119 @@ const fallbackIntentClassification = (message) => {
   const ageMatch = lower.match(/(\d+)\s*year/);
   if (ageMatch) entities.age = parseInt(ageMatch[1]);
 
-  return { intent, confidence: 0.7, entities };
+  return intent;
 };
 
-module.exports = { classifyIntent, extractProfile, processDocument };
+/**
+ * POST /api/ai/chat
+ * Chat with Gemini using scheme context
+ */
+const chatWithGemini = async (req, res) => {
+  try {
+    const { sessionId, message } = req.body;
+    if (!message) {
+      return res.status(400).json({ success: false, error: 'Message is required' });
+    }
+
+    if (!model) {
+      return res.status(503).json({ success: false, error: 'Gemini AI is not configured. Please set GEMINI_API_KEY.' });
+    }
+
+    let chatSession;
+    let contextStr = '';
+
+    // If new session, we want to give Gemini some basic context of the schemes
+    if (sessionId) {
+      chatSession = await ChatSession.findById(sessionId);
+      if (!chatSession) return res.status(404).json({ success: false, error: 'Chat session not found' });
+    } else {
+      // First message, generate title
+      chatSession = new ChatSession({
+        title: message.substring(0, 40) + (message.length > 40 ? '...' : ''),
+        messages: []
+      });
+      
+      // Fetch some schemes for context
+      const schemes = await Scheme.find({ status: 'active' }).limit(50).select('name description category benefits eligibility');
+      contextStr = `System: You are an AI assistant for "YojanaSetu", a portal for Indian government welfare schemes. Answer user queries nicely using markdown formatting based on the following scheme context:\n`;
+      schemes.forEach(s => {
+        contextStr += `- **${s.name}** (${s.category}): ${s.description.substring(0,100)}... Benefits: ${s.benefits.map(b=>b.type).join(',')}\n`;
+      });
+      contextStr += `Always respond in the same language the user uses. Be concise but helpful.\n\n`;
+    }
+
+    // Prepare history for Gemini API
+    const history = chatSession.messages.map(msg => ({
+      role: msg.role === 'model' ? 'model' : 'user',
+      parts: [{ text: msg.content }]
+    }));
+
+    if (!sessionId) {
+      history.push({ role: 'user', parts: [{ text: contextStr + "User says: " + message }] });
+    } else {
+      history.push({ role: 'user', parts: [{ text: message }] });
+    }
+
+    chatSession.messages.push({ role: 'user', content: message });
+
+    const chat = model.startChat({
+      history: history.slice(0, history.length - 1), // passing history up to previous
+      generationConfig: { maxOutputTokens: 1000 },
+    });
+
+    const result = await chat.sendMessage(history[history.length - 1].parts[0].text);
+    const responseText = result.response.text();
+
+    chatSession.messages.push({ role: 'model', content: responseText });
+    await chatSession.save();
+
+    res.json({
+      success: true,
+      data: {
+        sessionId: chatSession._id,
+        title: chatSession.title,
+        message: responseText
+      }
+    });
+
+  } catch (err) {
+    logger.error('Chat error:', err);
+    res.status(500).json({ success: false, error: err.message });
+  }
+};
+
+/**
+ * GET /api/ai/chat/history
+ * Fetch recent chat sessions
+ */
+const getChatHistory = async (req, res) => {
+  try {
+    const sessions = await ChatSession.find().sort({ updatedAt: -1 }).limit(20).select('title updatedAt');
+    res.json({ success: true, data: sessions });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+};
+
+/**
+ * GET /api/ai/chat/:sessionId
+ * Fetch messages for a specific session
+ */
+const getChatSession = async (req, res) => {
+  try {
+    const session = await ChatSession.findById(req.params.sessionId);
+    if (!session) return res.status(404).json({ success: false, error: 'Not found' });
+    res.json({ success: true, data: session });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+};
+
+module.exports = {
+  classifyIntent,
+  extractProfile,
+  processDocument,
+  chatWithGemini,
+  getChatHistory,
+  getChatSession
+};

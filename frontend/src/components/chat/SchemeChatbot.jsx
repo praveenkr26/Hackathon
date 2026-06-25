@@ -1,0 +1,191 @@
+import React, { useState, useEffect, useRef } from 'react';
+import ReactMarkdown from 'react-markdown';
+import { aiAPI } from '../../services/api';
+import { useLanguage } from '../../context/LanguageContext';
+import './SchemeChatbot.css';
+
+const SchemeChatbot = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [history, setHistory] = useState([]);
+  const [activeSessionId, setActiveSessionId] = useState(null);
+  const [messages, setMessages] = useState([]);
+  const [inputValue, setInputValue] = useState('');
+  const [loading, setLoading] = useState(false);
+  const messagesEndRef = useRef(null);
+  const { language } = useLanguage();
+
+  // Load chat history on mount and when chatbot is opened
+  useEffect(() => {
+    if (isOpen) {
+      fetchHistory();
+    }
+  }, [isOpen]);
+
+  // Scroll to bottom when messages change
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
+
+  const fetchHistory = async () => {
+    try {
+      const res = await aiAPI.getChatHistory();
+      setHistory(res.data);
+    } catch (err) {
+      console.error('Failed to load chat history', err);
+    }
+  };
+
+  const loadSession = async (sessionId) => {
+    try {
+      setActiveSessionId(sessionId);
+      setMessages([]);
+      setLoading(true);
+      const res = await aiAPI.getChatSession(sessionId);
+      setMessages(res.data.messages || []);
+    } catch (err) {
+      console.error('Failed to load session', err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const startNewChat = () => {
+    setActiveSessionId(null);
+    setMessages([]);
+  };
+
+  const handleSend = async (e) => {
+    e?.preventDefault();
+    if (!inputValue.trim()) return;
+
+    const userText = inputValue.trim();
+    setInputValue('');
+    setMessages(prev => [...prev, { role: 'user', content: userText }]);
+    setLoading(true);
+
+    try {
+      const payload = { message: userText };
+      if (activeSessionId) {
+        payload.sessionId = activeSessionId;
+      }
+      
+      const res = await aiAPI.chat(payload);
+      
+      setMessages(prev => [...prev, { role: 'model', content: res.data.message }]);
+      
+      // If it was a new chat, we need to refresh history and set active session
+      if (!activeSessionId && res.data.sessionId) {
+        setActiveSessionId(res.data.sessionId);
+        fetchHistory();
+      }
+    } catch (err) {
+      console.error('Chat error', err);
+      setMessages(prev => [...prev, { role: 'model', content: '⚠️ Sorry, I encountered an error connecting to AI.' }]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="scheme-chatbot-container">
+      {/* Floating Action Button */}
+      {!isOpen && (
+        <button 
+          className="chatbot-fab" 
+          onClick={() => setIsOpen(true)}
+          title={language === 'hi' ? 'योजनाओं के बारे में पूछें' : 'Ask about Schemes'}
+        >
+          🤖
+        </button>
+      )}
+
+      {/* Chatbot Window */}
+      {isOpen && (
+        <div className="chatbot-window">
+          {/* Sidebar (History) */}
+          <div className="chatbot-sidebar">
+            <div className="sidebar-header">
+              <h3>{language === 'hi' ? 'चैट हिस्ट्री' : 'Chat History'}</h3>
+              <button className="new-chat-btn" onClick={startNewChat}>
+                {language === 'hi' ? '+ नया' : '+ New'}
+              </button>
+            </div>
+            <div className="history-list">
+              {history.map(session => (
+                <div 
+                  key={session._id} 
+                  className={`history-item ${activeSessionId === session._id ? 'active' : ''}`}
+                  onClick={() => loadSession(session._id)}
+                  title={session.title}
+                >
+                  💬 {session.title}
+                </div>
+              ))}
+              {history.length === 0 && (
+                <div style={{ padding: '10px', fontSize: '0.8rem', color: 'var(--color-text-light)' }}>
+                  {language === 'hi' ? 'कोई पुरानी चैट नहीं' : 'No recent chats'}
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Main Chat Area */}
+          <div className="chatbot-main">
+            <div className="chat-header">
+              <h4>{language === 'hi' ? 'योजनासेतु एआई असिस्टेंट' : 'YojanaSetu AI Assistant'}</h4>
+              <button className="close-btn" onClick={() => setIsOpen(false)}>×</button>
+            </div>
+            
+            <div className="chat-messages">
+              {messages.length === 0 && !loading && (
+                <div style={{ textAlign: 'center', marginTop: '40px', color: 'var(--color-text-light)' }}>
+                  <div style={{ fontSize: '40px', marginBottom: '10px' }}>✨</div>
+                  <p>{language === 'hi' ? 'नमस्ते! मैं आपकी योजनाओं से जुड़ी मदद कैसे कर सकता हूँ?' : 'Hello! How can I help you find welfare schemes today?'}</p>
+                </div>
+              )}
+
+              {messages.map((msg, i) => (
+                <div key={i} className={`message ${msg.role}`}>
+                  {msg.role === 'model' ? (
+                    <div className="message-markdown">
+                      <ReactMarkdown>{msg.content}</ReactMarkdown>
+                    </div>
+                  ) : (
+                    <div>{msg.content}</div>
+                  )}
+                </div>
+              ))}
+              
+              {loading && (
+                <div className="message model">
+                  <div className="loading-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+              )}
+              <div ref={messagesEndRef} />
+            </div>
+
+            <form className="chat-input-area" onSubmit={handleSend}>
+              <input 
+                type="text" 
+                className="chat-input"
+                placeholder={language === 'hi' ? 'अपनी जानकारी या सवाल लिखें...' : 'Type your question here...'}
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                disabled={loading}
+              />
+              <button type="submit" className="send-btn" disabled={!inputValue.trim() || loading}>
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default SchemeChatbot;

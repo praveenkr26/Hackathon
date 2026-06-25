@@ -40,7 +40,10 @@ export const schemeAPI = {
 export const aiAPI = {
   classifyIntent: (message) => api.post('/ai/intent', { message }),
   extractProfile: (text) => api.post('/ai/profile', { text }),
-  processOCR: (data) => api.post('/ai/ocr', data)
+  processOCR: (data) => api.post('/ai/ocr', data),
+  chat: (data) => api.post('/ai/chat', data),
+  getChatHistory: () => api.get('/ai/chat/history'),
+  getChatSession: (sessionId) => api.get(`/ai/chat/${sessionId}`)
 };
 
 // ─── Health ──────────────────────────────────────────────────

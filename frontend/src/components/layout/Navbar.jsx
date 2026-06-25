@@ -56,23 +56,6 @@ const Navbar = () => {
   // Apply saved color on mount
   useEffect(() => { applyColor(activeColor); }, []);
 
-  // Close color picker on outside click
-  useEffect(() => {
-    const handler = (e) => {
-      if (colorPickerRef.current && !colorPickerRef.current.contains(e.target))
-        setShowColorPicker(false);
-    };
-    document.addEventListener('mousedown', handler);
-    return () => document.removeEventListener('mousedown', handler);
-  }, []);
-
-  const handleColorChange = (preset) => {
-    setActiveColor(preset);
-    applyColor(preset);
-    localStorage.setItem('yjs-color', JSON.stringify(preset));
-    setShowColorPicker(false);
-  };
-
   useEffect(() => {
     return () => stop();
   }, [stop, location.pathname]); // Stop speaking if path changes
@@ -254,73 +237,7 @@ const Navbar = () => {
               </button>
             )}
 
-            {/* 🎨 Color Picker */}
-            <div ref={colorPickerRef} style={{ position: 'relative' }}>
-              <button
-                className="nav-icon-btn"
-                onClick={() => setShowColorPicker(p => !p)}
-                aria-label="Change theme color"
-                title="Change theme color"
-                id="nav-color-picker-btn"
-                style={{
-                  border: `2px solid ${showColorPicker ? activeColor.primary + 'cc' : 'transparent'}`,
-                  borderRadius: '8px', transition: 'border-color 0.2s ease'
-                }}
-              >
-                <span style={{
-                  display: 'inline-block', width: '16px', height: '16px', borderRadius: '50%',
-                  background: `linear-gradient(135deg,${activeColor.primary},${activeColor.light})`,
-                  verticalAlign: 'middle'
-                }} />
-              </button>
-
-              {showColorPicker && (
-                <div style={{
-                  position: 'absolute', right: 0, top: 'calc(100% + 10px)',
-                  background: isDark ? '#1e1e3a' : '#ffffff',
-                  border: `1px solid ${isDark ? 'rgba(255,255,255,0.12)' : 'rgba(0,0,0,0.12)'}`,
-                  borderRadius: '14px', padding: '12px',
-                  display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '8px',
-                  zIndex: 9999, minWidth: '170px',
-                  boxShadow: '0 20px 40px rgba(0,0,0,0.3)'
-                }}>
-                  <div style={{
-                    gridColumn: '1/-1', fontSize: '0.65rem', fontWeight: 700,
-                    letterSpacing: '0.1em', color: isDark ? '#94A3B8' : '#64748B',
-                    textTransform: 'uppercase', marginBottom: '4px'
-                  }}>Theme Color</div>
-                  {COLOR_PRESETS.map(preset => (
-                    <button
-                      key={preset.name}
-                      onClick={() => handleColorChange(preset)}
-                      title={preset.name}
-                      style={{
-                        display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px',
-                        background: 'transparent', border: 'none', cursor: 'pointer',
-                        padding: '6px 4px', borderRadius: '8px'
-                      }}
-                    >
-                      <span style={{
-                        width: '26px', height: '26px', borderRadius: '50%', display: 'block',
-                        background: `linear-gradient(135deg,${preset.primary},${preset.light})`,
-                        border: `2px solid ${activeColor.name === preset.name ? '#fff' : 'transparent'}`,
-                        boxShadow: activeColor.name === preset.name ? `0 0 8px ${preset.primary}99` : 'none',
-                        transform: activeColor.name === preset.name ? 'scale(1.15)' : 'scale(1)',
-                        transition: 'all 0.2s ease'
-                      }} />
-                      <span style={{ fontSize: '0.6rem', color: isDark ? '#94A3B8' : '#64748B' }}>
-                        {preset.name}
-                      </span>
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* CTA */}
-            <Link to="/smart-match" className="nav-cta btn btn-primary btn-sm">
-              {t(language, 'hero.ctaPrimary')}
-            </Link>
+            {/* Removed Color Picker and Find My Schemes */}
 
             {/* Mobile Hamburger */}
             <button
@@ -368,14 +285,6 @@ const Navbar = () => {
             >
               {link.label}
             </NavLink>
-          ))}
-          <Link
-            to="/smart-match"
-            className="btn btn-primary mobile-cta"
-            onClick={() => setMobileOpen(false)}
-          >
-            {t(language, 'hero.ctaPrimary')}
-          </Link>
         </div>
       </div>
 
