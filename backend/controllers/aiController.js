@@ -11,7 +11,7 @@ const initGemini = () => {
     try {
       const { GoogleGenerativeAI } = require('@google/generative-ai');
       genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-      model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+      model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro' });
       logger.info('✅ Gemini AI initialized');
     } catch (err) {
       logger.warn('Gemini AI initialization failed:', err.message);
@@ -334,17 +334,19 @@ const chatWithGemini = async (req, res) => {
       });
       
       // Fetch some schemes for context
-      const schemes = await Scheme.find({ status: 'active' }).limit(50).select('name description category benefits eligibility applicationUrl');
+      const schemes = await Scheme.find({ status: 'active' }).limit(50).select('_id name description category benefits eligibility applicationUrl');
       contextStr = `System: You are an AI assistant for "YojanaSetu", a portal for Indian government welfare schemes. 
 IMPORTANT INSTRUCTION: You are NOT limited to the schemes provided below. You have access to Google Search. If a user asks about any new, state-specific, or central government scheme that is NOT in the list below, you MUST use your search capabilities to find the latest information online and provide a detailed answer.
 
-CRITICAL REQUIREMENT: Whenever you provide details about a scheme, you MUST provide the official application link or portal URL so the user can directly apply.
+CRITICAL REQUIREMENT: Whenever you provide details about a scheme:
+1. You MUST provide the official application link or portal URL so the user can directly apply.
+2. If the scheme is from the YojanaSetu database list provided below, you MUST also provide a link to the YojanaSetu portal page for that scheme in this format: [View on YojanaSetu](/schemes/SCHEME_ID)
 
 Here are some schemes currently stored in our database for context:\n`;
       schemes.forEach(s => {
-        contextStr += `- **${s.name}** (${s.category}): ${s.description.substring(0,100)}... Benefits: ${s.benefits.map(b=>b.type).join(',')}. Apply Link: ${s.applicationUrl || 'Find online'}\n`;
+        contextStr += `- **${s.name}** (ID: ${s._id}) (${s.category}): ${s.description.substring(0,100)}... Benefits: ${s.benefits.map(b=>b.type).join(',')}. Apply Link: ${s.applicationUrl || 'Find online'}\n`;
       });
-      contextStr += `Always respond in the same language the user uses. Be concise but highly informative, using beautiful markdown formatting (bolding, bullet points).\n\n`;
+      contextStr += `Always respond in the same language the user uses. Be concise but highly informative, using beautiful markdown formatting (bolding, bullet points, links).\n\n`;
     }
 
     // Prepare history for Gemini API

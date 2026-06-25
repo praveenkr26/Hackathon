@@ -152,7 +152,13 @@ const SchemeChatbot = () => {
                 <div key={i} className={`message ${msg.role}`}>
                   {msg.role === 'model' ? (
                     <div className="message-markdown" style={{ position: 'relative' }}>
-                      <ReactMarkdown>{msg.content}</ReactMarkdown>
+                      <ReactMarkdown 
+                        components={{
+                          a: ({node, ...props}) => <a {...props} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-primary)', textDecoration: 'underline' }} />
+                        }}
+                      >
+                        {msg.content}
+                      </ReactMarkdown>
                       {/* Speech Controls */}
                       <div style={{ marginTop: '8px', display: 'flex', gap: '8px' }}>
                         <button 
