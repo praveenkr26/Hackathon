@@ -285,6 +285,7 @@ const Navbar = () => {
             >
               {link.label}
             </NavLink>
+          ))}
         </div>
       </div>
 
