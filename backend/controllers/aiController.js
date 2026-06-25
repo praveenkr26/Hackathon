@@ -366,7 +366,7 @@ Here are some schemes currently stored in our database for context:\n`;
     const chat = model.startChat({
       history: history.slice(0, history.length - 1), // passing history up to previous
       generationConfig: { maxOutputTokens: 1000 },
-      tools: [{ googleSearch: {} }] // Enable Google Search Grounding for real-time scheme data
+      tools: [{ googleSearchRetrieval: { dynamicRetrievalConfig: { mode: 'MODE_DYNAMIC', dynamicThreshold: 0.3 } } }] // Enable Google Search Grounding for real-time scheme data
     });
 
     const result = await chat.sendMessage(history[history.length - 1].parts[0].text);
