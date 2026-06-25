@@ -2859,1235 +2859,1763 @@
     "imageUrl": null
   },
   {
-    "schemeId": "S1057",
-    "title": "Welfare Scheme for Health Phase 1",
+    "name": "Welfare Scheme for Health Phase 1",
     "description": "A comprehensive government initiative aimed at improving health across Maharashtra.",
-    "department": "Department of Health",
-    "state": "Maharashtra",
     "category": "health",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Health",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Maharashtra"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "health"
+    ]
   },
   {
-    "schemeId": "S1058",
-    "title": "Welfare Scheme for Housing Phase 2",
+    "name": "Welfare Scheme for Housing Phase 2",
     "description": "A comprehensive government initiative aimed at improving housing across Uttar Pradesh.",
-    "department": "Department of Housing",
-    "state": "Uttar Pradesh",
     "category": "housing",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Housing",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Uttar Pradesh"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "housing"
+    ]
   },
   {
-    "schemeId": "S1059",
-    "title": "Welfare Scheme for Employment Phase 3",
+    "name": "Welfare Scheme for Employment Phase 3",
     "description": "A comprehensive government initiative aimed at improving employment across Karnataka.",
-    "department": "Department of Employment",
-    "state": "Karnataka",
     "category": "employment",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Employment",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Karnataka"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "employment"
+    ]
   },
   {
-    "schemeId": "S1060",
-    "title": "Welfare Scheme for Agriculture Phase 4",
+    "name": "Welfare Scheme for Agriculture Phase 4",
     "description": "A comprehensive government initiative aimed at improving agriculture across Tamil Nadu.",
-    "department": "Department of Agriculture",
-    "state": "Tamil Nadu",
     "category": "agriculture",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Agriculture",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Tamil Nadu"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "agriculture"
+    ]
   },
   {
-    "schemeId": "S1061",
-    "title": "Welfare Scheme for Women-empowerment Phase 5",
+    "name": "Welfare Scheme for Women-empowerment Phase 5",
     "description": "A comprehensive government initiative aimed at improving women-empowerment across Delhi.",
-    "department": "Department of Women-empowerment",
-    "state": "Delhi",
     "category": "women-empowerment",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Women-empowerment",
+    "status": "active",
+    "featured": true,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Delhi"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": true
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "women-empowerment"
+    ]
   },
   {
-    "schemeId": "S1062",
-    "title": "Welfare Scheme for Skill-development Phase 6",
+    "name": "Welfare Scheme for Skill-development Phase 6",
     "description": "A comprehensive government initiative aimed at improving skill-development across All India.",
-    "department": "Department of Skill-development",
-    "state": "All India",
     "category": "skill-development",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Skill-development",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "All India"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "skill-development"
+    ]
   },
   {
-    "schemeId": "S1063",
-    "title": "Welfare Scheme for Education Phase 7",
+    "name": "Welfare Scheme for Education Phase 7",
     "description": "A comprehensive government initiative aimed at improving education across Maharashtra.",
-    "department": "Department of Education",
-    "state": "Maharashtra",
     "category": "education",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Education",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Maharashtra"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "education"
+    ]
   },
   {
-    "schemeId": "S1064",
-    "title": "Welfare Scheme for Health Phase 8",
+    "name": "Welfare Scheme for Health Phase 8",
     "description": "A comprehensive government initiative aimed at improving health across Uttar Pradesh.",
-    "department": "Department of Health",
-    "state": "Uttar Pradesh",
     "category": "health",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Health",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Uttar Pradesh"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "health"
+    ]
   },
   {
-    "schemeId": "S1065",
-    "title": "Welfare Scheme for Housing Phase 9",
+    "name": "Welfare Scheme for Housing Phase 9",
     "description": "A comprehensive government initiative aimed at improving housing across Karnataka.",
-    "department": "Department of Housing",
-    "state": "Karnataka",
     "category": "housing",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Housing",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Karnataka"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "housing"
+    ]
   },
   {
-    "schemeId": "S1066",
-    "title": "Welfare Scheme for Employment Phase 10",
+    "name": "Welfare Scheme for Employment Phase 10",
     "description": "A comprehensive government initiative aimed at improving employment across Tamil Nadu.",
-    "department": "Department of Employment",
-    "state": "Tamil Nadu",
     "category": "employment",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Employment",
+    "status": "active",
+    "featured": true,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Tamil Nadu"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": true
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "employment"
+    ]
   },
   {
-    "schemeId": "S1067",
-    "title": "Welfare Scheme for Agriculture Phase 11",
+    "name": "Welfare Scheme for Agriculture Phase 11",
     "description": "A comprehensive government initiative aimed at improving agriculture across Delhi.",
-    "department": "Department of Agriculture",
-    "state": "Delhi",
     "category": "agriculture",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Agriculture",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Delhi"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "agriculture"
+    ]
   },
   {
-    "schemeId": "S1068",
-    "title": "Welfare Scheme for Women-empowerment Phase 12",
+    "name": "Welfare Scheme for Women-empowerment Phase 12",
     "description": "A comprehensive government initiative aimed at improving women-empowerment across All India.",
-    "department": "Department of Women-empowerment",
-    "state": "All India",
     "category": "women-empowerment",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Women-empowerment",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "All India"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "women-empowerment"
+    ]
   },
   {
-    "schemeId": "S1069",
-    "title": "Welfare Scheme for Skill-development Phase 13",
+    "name": "Welfare Scheme for Skill-development Phase 13",
     "description": "A comprehensive government initiative aimed at improving skill-development across Maharashtra.",
-    "department": "Department of Skill-development",
-    "state": "Maharashtra",
     "category": "skill-development",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Skill-development",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Maharashtra"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "skill-development"
+    ]
   },
   {
-    "schemeId": "S1070",
-    "title": "Welfare Scheme for Education Phase 14",
+    "name": "Welfare Scheme for Education Phase 14",
     "description": "A comprehensive government initiative aimed at improving education across Uttar Pradesh.",
-    "department": "Department of Education",
-    "state": "Uttar Pradesh",
     "category": "education",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Education",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Uttar Pradesh"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "education"
+    ]
   },
   {
-    "schemeId": "S1071",
-    "title": "Welfare Scheme for Health Phase 15",
+    "name": "Welfare Scheme for Health Phase 15",
     "description": "A comprehensive government initiative aimed at improving health across Karnataka.",
-    "department": "Department of Health",
-    "state": "Karnataka",
     "category": "health",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Health",
+    "status": "active",
+    "featured": true,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Karnataka"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": true
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "health"
+    ]
   },
   {
-    "schemeId": "S1072",
-    "title": "Welfare Scheme for Housing Phase 16",
+    "name": "Welfare Scheme for Housing Phase 16",
     "description": "A comprehensive government initiative aimed at improving housing across Tamil Nadu.",
-    "department": "Department of Housing",
-    "state": "Tamil Nadu",
     "category": "housing",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Housing",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Tamil Nadu"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "housing"
+    ]
   },
   {
-    "schemeId": "S1073",
-    "title": "Welfare Scheme for Employment Phase 17",
+    "name": "Welfare Scheme for Employment Phase 17",
     "description": "A comprehensive government initiative aimed at improving employment across Delhi.",
-    "department": "Department of Employment",
-    "state": "Delhi",
     "category": "employment",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Employment",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Delhi"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "employment"
+    ]
   },
   {
-    "schemeId": "S1074",
-    "title": "Welfare Scheme for Agriculture Phase 18",
+    "name": "Welfare Scheme for Agriculture Phase 18",
     "description": "A comprehensive government initiative aimed at improving agriculture across All India.",
-    "department": "Department of Agriculture",
-    "state": "All India",
     "category": "agriculture",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Agriculture",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "All India"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "agriculture"
+    ]
   },
   {
-    "schemeId": "S1075",
-    "title": "Welfare Scheme for Women-empowerment Phase 19",
+    "name": "Welfare Scheme for Women-empowerment Phase 19",
     "description": "A comprehensive government initiative aimed at improving women-empowerment across Maharashtra.",
-    "department": "Department of Women-empowerment",
-    "state": "Maharashtra",
     "category": "women-empowerment",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Women-empowerment",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Maharashtra"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "women-empowerment"
+    ]
   },
   {
-    "schemeId": "S1076",
-    "title": "Welfare Scheme for Skill-development Phase 20",
+    "name": "Welfare Scheme for Skill-development Phase 20",
     "description": "A comprehensive government initiative aimed at improving skill-development across Uttar Pradesh.",
-    "department": "Department of Skill-development",
-    "state": "Uttar Pradesh",
     "category": "skill-development",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Skill-development",
+    "status": "active",
+    "featured": true,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Uttar Pradesh"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": true
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "skill-development"
+    ]
   },
   {
-    "schemeId": "S1077",
-    "title": "Welfare Scheme for Education Phase 21",
+    "name": "Welfare Scheme for Education Phase 21",
     "description": "A comprehensive government initiative aimed at improving education across Karnataka.",
-    "department": "Department of Education",
-    "state": "Karnataka",
     "category": "education",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Education",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Karnataka"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "education"
+    ]
   },
   {
-    "schemeId": "S1078",
-    "title": "Welfare Scheme for Health Phase 22",
+    "name": "Welfare Scheme for Health Phase 22",
     "description": "A comprehensive government initiative aimed at improving health across Tamil Nadu.",
-    "department": "Department of Health",
-    "state": "Tamil Nadu",
     "category": "health",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Health",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Tamil Nadu"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "health"
+    ]
   },
   {
-    "schemeId": "S1079",
-    "title": "Welfare Scheme for Housing Phase 23",
+    "name": "Welfare Scheme for Housing Phase 23",
     "description": "A comprehensive government initiative aimed at improving housing across Delhi.",
-    "department": "Department of Housing",
-    "state": "Delhi",
     "category": "housing",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Housing",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Delhi"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "housing"
+    ]
   },
   {
-    "schemeId": "S1080",
-    "title": "Welfare Scheme for Employment Phase 24",
+    "name": "Welfare Scheme for Employment Phase 24",
     "description": "A comprehensive government initiative aimed at improving employment across All India.",
-    "department": "Department of Employment",
-    "state": "All India",
     "category": "employment",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Employment",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "All India"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "employment"
+    ]
   },
   {
-    "schemeId": "S1081",
-    "title": "Welfare Scheme for Agriculture Phase 25",
+    "name": "Welfare Scheme for Agriculture Phase 25",
     "description": "A comprehensive government initiative aimed at improving agriculture across Maharashtra.",
-    "department": "Department of Agriculture",
-    "state": "Maharashtra",
     "category": "agriculture",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Agriculture",
+    "status": "active",
+    "featured": true,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Maharashtra"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": true
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "agriculture"
+    ]
   },
   {
-    "schemeId": "S1082",
-    "title": "Welfare Scheme for Women-empowerment Phase 26",
+    "name": "Welfare Scheme for Women-empowerment Phase 26",
     "description": "A comprehensive government initiative aimed at improving women-empowerment across Uttar Pradesh.",
-    "department": "Department of Women-empowerment",
-    "state": "Uttar Pradesh",
     "category": "women-empowerment",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Women-empowerment",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Uttar Pradesh"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "women-empowerment"
+    ]
   },
   {
-    "schemeId": "S1083",
-    "title": "Welfare Scheme for Skill-development Phase 27",
+    "name": "Welfare Scheme for Skill-development Phase 27",
     "description": "A comprehensive government initiative aimed at improving skill-development across Karnataka.",
-    "department": "Department of Skill-development",
-    "state": "Karnataka",
     "category": "skill-development",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Skill-development",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Karnataka"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "skill-development"
+    ]
   },
   {
-    "schemeId": "S1084",
-    "title": "Welfare Scheme for Education Phase 28",
+    "name": "Welfare Scheme for Education Phase 28",
     "description": "A comprehensive government initiative aimed at improving education across Tamil Nadu.",
-    "department": "Department of Education",
-    "state": "Tamil Nadu",
     "category": "education",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Education",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Tamil Nadu"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "education"
+    ]
   },
   {
-    "schemeId": "S1085",
-    "title": "Welfare Scheme for Health Phase 29",
+    "name": "Welfare Scheme for Health Phase 29",
     "description": "A comprehensive government initiative aimed at improving health across Delhi.",
-    "department": "Department of Health",
-    "state": "Delhi",
     "category": "health",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Health",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Delhi"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "health"
+    ]
   },
   {
-    "schemeId": "S1086",
-    "title": "Welfare Scheme for Housing Phase 30",
+    "name": "Welfare Scheme for Housing Phase 30",
     "description": "A comprehensive government initiative aimed at improving housing across All India.",
-    "department": "Department of Housing",
-    "state": "All India",
     "category": "housing",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Housing",
+    "status": "active",
+    "featured": true,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "All India"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": true
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "housing"
+    ]
   },
   {
-    "schemeId": "S1087",
-    "title": "Welfare Scheme for Employment Phase 31",
+    "name": "Welfare Scheme for Employment Phase 31",
     "description": "A comprehensive government initiative aimed at improving employment across Maharashtra.",
-    "department": "Department of Employment",
-    "state": "Maharashtra",
     "category": "employment",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Employment",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Maharashtra"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "employment"
+    ]
   },
   {
-    "schemeId": "S1088",
-    "title": "Welfare Scheme for Agriculture Phase 32",
+    "name": "Welfare Scheme for Agriculture Phase 32",
     "description": "A comprehensive government initiative aimed at improving agriculture across Uttar Pradesh.",
-    "department": "Department of Agriculture",
-    "state": "Uttar Pradesh",
     "category": "agriculture",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Agriculture",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Uttar Pradesh"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "agriculture"
+    ]
   },
   {
-    "schemeId": "S1089",
-    "title": "Welfare Scheme for Women-empowerment Phase 33",
+    "name": "Welfare Scheme for Women-empowerment Phase 33",
     "description": "A comprehensive government initiative aimed at improving women-empowerment across Karnataka.",
-    "department": "Department of Women-empowerment",
-    "state": "Karnataka",
     "category": "women-empowerment",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Women-empowerment",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Karnataka"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "women-empowerment"
+    ]
   },
   {
-    "schemeId": "S1090",
-    "title": "Welfare Scheme for Skill-development Phase 34",
+    "name": "Welfare Scheme for Skill-development Phase 34",
     "description": "A comprehensive government initiative aimed at improving skill-development across Tamil Nadu.",
-    "department": "Department of Skill-development",
-    "state": "Tamil Nadu",
     "category": "skill-development",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Skill-development",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Tamil Nadu"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "skill-development"
+    ]
   },
   {
-    "schemeId": "S1091",
-    "title": "Welfare Scheme for Education Phase 35",
+    "name": "Welfare Scheme for Education Phase 35",
     "description": "A comprehensive government initiative aimed at improving education across Delhi.",
-    "department": "Department of Education",
-    "state": "Delhi",
     "category": "education",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Education",
+    "status": "active",
+    "featured": true,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Delhi"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": true
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "education"
+    ]
   },
   {
-    "schemeId": "S1092",
-    "title": "Welfare Scheme for Health Phase 36",
+    "name": "Welfare Scheme for Health Phase 36",
     "description": "A comprehensive government initiative aimed at improving health across All India.",
-    "department": "Department of Health",
-    "state": "All India",
     "category": "health",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Health",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "All India"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "health"
+    ]
   },
   {
-    "schemeId": "S1093",
-    "title": "Welfare Scheme for Housing Phase 37",
+    "name": "Welfare Scheme for Housing Phase 37",
     "description": "A comprehensive government initiative aimed at improving housing across Maharashtra.",
-    "department": "Department of Housing",
-    "state": "Maharashtra",
     "category": "housing",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Housing",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Maharashtra"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "housing"
+    ]
   },
   {
-    "schemeId": "S1094",
-    "title": "Welfare Scheme for Employment Phase 38",
+    "name": "Welfare Scheme for Employment Phase 38",
     "description": "A comprehensive government initiative aimed at improving employment across Uttar Pradesh.",
-    "department": "Department of Employment",
-    "state": "Uttar Pradesh",
     "category": "employment",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Employment",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Uttar Pradesh"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "employment"
+    ]
   },
   {
-    "schemeId": "S1095",
-    "title": "Welfare Scheme for Agriculture Phase 39",
+    "name": "Welfare Scheme for Agriculture Phase 39",
     "description": "A comprehensive government initiative aimed at improving agriculture across Karnataka.",
-    "department": "Department of Agriculture",
-    "state": "Karnataka",
     "category": "agriculture",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Agriculture",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Karnataka"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "agriculture"
+    ]
   },
   {
-    "schemeId": "S1096",
-    "title": "Welfare Scheme for Women-empowerment Phase 40",
+    "name": "Welfare Scheme for Women-empowerment Phase 40",
     "description": "A comprehensive government initiative aimed at improving women-empowerment across Tamil Nadu.",
-    "department": "Department of Women-empowerment",
-    "state": "Tamil Nadu",
     "category": "women-empowerment",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Women-empowerment",
+    "status": "active",
+    "featured": true,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Tamil Nadu"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": true
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "women-empowerment"
+    ]
   },
   {
-    "schemeId": "S1097",
-    "title": "Welfare Scheme for Skill-development Phase 41",
+    "name": "Welfare Scheme for Skill-development Phase 41",
     "description": "A comprehensive government initiative aimed at improving skill-development across Delhi.",
-    "department": "Department of Skill-development",
-    "state": "Delhi",
     "category": "skill-development",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Skill-development",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Delhi"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "skill-development"
+    ]
   },
   {
-    "schemeId": "S1098",
-    "title": "Welfare Scheme for Education Phase 42",
+    "name": "Welfare Scheme for Education Phase 42",
     "description": "A comprehensive government initiative aimed at improving education across All India.",
-    "department": "Department of Education",
-    "state": "All India",
     "category": "education",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Education",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "All India"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "education"
+    ]
   },
   {
-    "schemeId": "S1099",
-    "title": "Welfare Scheme for Health Phase 43",
+    "name": "Welfare Scheme for Health Phase 43",
     "description": "A comprehensive government initiative aimed at improving health across Maharashtra.",
-    "department": "Department of Health",
-    "state": "Maharashtra",
     "category": "health",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Health",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Maharashtra"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "health"
+    ]
   },
   {
-    "schemeId": "S1100",
-    "title": "Welfare Scheme for Housing Phase 44",
+    "name": "Welfare Scheme for Housing Phase 44",
     "description": "A comprehensive government initiative aimed at improving housing across Uttar Pradesh.",
-    "department": "Department of Housing",
-    "state": "Uttar Pradesh",
     "category": "housing",
-    "benefits": [
-      "Financial assistance",
-      "Subsidized services",
-      "Skill training"
-    ],
+    "ministry": "Department of Housing",
+    "status": "active",
+    "featured": false,
     "eligibility": {
-      "ageRange": {
-        "min": 18,
-        "max": 60
-      },
+      "minAge": 18,
+      "maxAge": 60,
       "incomeLimit": 500000,
       "gender": "all",
-      "occupation": [],
-      "caste": [],
-      "specialConditions": []
+      "states": [
+        "Uttar Pradesh"
+      ]
     },
-    "applicationMode": "online",
-    "portalUrl": "https://india.gov.in",
-    "status": "active",
-    "featured": false
+    "benefits": [
+      {
+        "type": "financial",
+        "description": "Financial assistance",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Subsidized services",
+        "frequency": "one-time"
+      },
+      {
+        "type": "financial",
+        "description": "Skill training",
+        "frequency": "one-time"
+      }
+    ],
+    "applicationProcess": "Online application through the official portal.",
+    "applicationUrl": "https://india.gov.in",
+    "tags": [
+      "welfare",
+      "housing"
+    ]
   }
 ]
