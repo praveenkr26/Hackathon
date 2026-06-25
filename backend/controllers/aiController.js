@@ -335,11 +335,14 @@ const chatWithGemini = async (req, res) => {
       
       // Fetch some schemes for context
       const schemes = await Scheme.find({ status: 'active' }).limit(50).select('name description category benefits eligibility');
-      contextStr = `System: You are an AI assistant for "YojanaSetu", a portal for Indian government welfare schemes. Answer user queries nicely using markdown formatting based on the following scheme context:\n`;
+      contextStr = `System: You are an AI assistant for "YojanaSetu", a portal for Indian government welfare schemes. 
+IMPORTANT INSTRUCTION: You are NOT limited to the schemes provided below. You have access to Google Search. If a user asks about any new, state-specific, or central government scheme that is NOT in the list below, you MUST use your search capabilities to find the latest information online and provide a detailed answer.
+
+Here are some schemes currently stored in our database for context:\n`;
       schemes.forEach(s => {
         contextStr += `- **${s.name}** (${s.category}): ${s.description.substring(0,100)}... Benefits: ${s.benefits.map(b=>b.type).join(',')}\n`;
       });
-      contextStr += `Always respond in the same language the user uses. Be concise but helpful.\n\n`;
+      contextStr += `Always respond in the same language the user uses. Be concise but highly informative, using markdown for formatting.\n\n`;
     }
 
     // Prepare history for Gemini API
@@ -359,6 +362,7 @@ const chatWithGemini = async (req, res) => {
     const chat = model.startChat({
       history: history.slice(0, history.length - 1), // passing history up to previous
       generationConfig: { maxOutputTokens: 1000 },
+      tools: [{ googleSearch: {} }] // Enable Google Search Grounding for real-time scheme data
     });
 
     const result = await chat.sendMessage(history[history.length - 1].parts[0].text);
