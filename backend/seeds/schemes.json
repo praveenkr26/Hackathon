@@ -9,13 +9,46 @@
     "launchYear": 2019,
     "status": "active",
     "featured": true,
-    "eligibility": { "minAge": 18, "maxAge": 100, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["farmer"] },
-    "benefits": [{ "type": "financial", "amount": 6000, "description": "Annual direct income support of ₹6,000 paid in three ₹2,000 installments", "frequency": "annually" }],
-    "documents": ["Aadhaar Card", "Bank Passbook", "Land Records (Khasra/Khatauni)", "Mobile Number"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "farmer"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "financial",
+        "amount": 6000,
+        "description": "Annual direct income support of ₹6,000 paid in three ₹2,000 installments",
+        "frequency": "annually"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Bank Passbook",
+      "Land Records (Khasra/Khatauni)",
+      "Mobile Number"
+    ],
     "applicationProcess": "Register at pmkisan.gov.in or visit nearest Common Service Centre (CSC). Farmer must register with Aadhaar and land records.",
     "applicationUrl": "https://pmkisan.gov.in",
     "helplineNumber": "155261",
-    "tags": ["farmer", "income support", "agriculture", "DBT", "rural", "kisan"],
+    "tags": [
+      "farmer",
+      "income support",
+      "agriculture",
+      "DBT",
+      "rural",
+      "kisan"
+    ],
     "imageUrl": null
   },
   {
@@ -28,13 +61,45 @@
     "launchYear": 2016,
     "status": "active",
     "featured": true,
-    "eligibility": { "minAge": 18, "maxAge": 100, "gender": "female", "incomeLimit": 120000, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "subsidy", "amount": 1600, "description": "Free LPG connection, first refill free, hotplate free — total benefit ~₹3,200", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "BPL Ration Card", "Bank Account", "Passport Size Photo", "Address Proof"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 100,
+      "gender": "female",
+      "incomeLimit": 120000,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "subsidy",
+        "amount": 1600,
+        "description": "Free LPG connection, first refill free, hotplate free — total benefit ~₹3,200",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "BPL Ration Card",
+      "Bank Account",
+      "Passport Size Photo",
+      "Address Proof"
+    ],
     "applicationProcess": "Apply at nearest LPG distributor or through pmuy.gov.in. Submit form with documents. Migrants can self-declare address.",
     "applicationUrl": "https://pmuy.gov.in",
     "helplineNumber": "1800-233-3555",
-    "tags": ["women", "LPG", "cooking gas", "BPL", "rural", "health", "ujjwala"],
+    "tags": [
+      "women",
+      "LPG",
+      "cooking gas",
+      "BPL",
+      "rural",
+      "health",
+      "ujjwala"
+    ],
     "imageUrl": null
   },
   {
@@ -47,13 +112,42 @@
     "launchYear": 2018,
     "status": "active",
     "featured": true,
-    "eligibility": { "minAge": 0, "maxAge": 100, "gender": "all", "incomeLimit": 200000, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "insurance", "amount": 500000, "description": "Cashless health coverage of ₹5 lakh per family per year for secondary and tertiary care", "frequency": "annually" }],
-    "documents": ["Aadhaar Card", "Ration Card", "Income Certificate"],
+    "eligibility": {
+      "minAge": 0,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": 200000,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "insurance",
+        "amount": 500000,
+        "description": "Cashless health coverage of ₹5 lakh per family per year for secondary and tertiary care",
+        "frequency": "annually"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card",
+      "Income Certificate"
+    ],
     "applicationProcess": "Check eligibility at pmjay.gov.in or call helpline. Eligible families get Ayushman card. Use at any empanelled hospital.",
     "applicationUrl": "https://pmjay.gov.in",
     "helplineNumber": "14555",
-    "tags": ["health insurance", "hospital", "cashless", "BPL", "ayushman", "medical"],
+    "tags": [
+      "health insurance",
+      "hospital",
+      "cashless",
+      "BPL",
+      "ayushman",
+      "medical"
+    ],
     "imageUrl": null
   },
   {
@@ -66,13 +160,44 @@
     "launchYear": 2015,
     "status": "active",
     "featured": true,
-    "eligibility": { "minAge": 21, "maxAge": 70, "gender": "all", "incomeLimit": 1800000, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "subsidy", "amount": 267280, "description": "Interest subsidy up to ₹2.67 lakh for EWS/LIG on home loans up to ₹6 lakh", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "Income Certificate", "Property Documents", "Bank Statement", "Affidavit"],
+    "eligibility": {
+      "minAge": 21,
+      "maxAge": 70,
+      "gender": "all",
+      "incomeLimit": 1800000,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "subsidy",
+        "amount": 267280,
+        "description": "Interest subsidy up to ₹2.67 lakh for EWS/LIG on home loans up to ₹6 lakh",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Property Documents",
+      "Bank Statement",
+      "Affidavit"
+    ],
     "applicationProcess": "Apply online at pmaymis.gov.in or through Urban Local Body. Self-certification of eligibility required.",
     "applicationUrl": "https://pmaymis.gov.in",
     "helplineNumber": "1800-11-6163",
-    "tags": ["housing", "home loan", "subsidy", "urban", "EWS", "affordable housing"],
+    "tags": [
+      "housing",
+      "home loan",
+      "subsidy",
+      "urban",
+      "EWS",
+      "affordable housing"
+    ],
     "imageUrl": null
   },
   {
@@ -85,13 +210,46 @@
     "launchYear": 2016,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 100, "gender": "all", "incomeLimit": 120000, "caste": ["all"], "states": ["all"], "occupation": ["all"] },
-    "benefits": [{ "type": "financial", "amount": 130000, "description": "₹1.20 lakh in plains, ₹1.30 lakh in hilly/NE states for house construction", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "BPL Certificate", "Bank Account", "Land Ownership Proof"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": 120000,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "financial",
+        "amount": 130000,
+        "description": "₹1.20 lakh in plains, ₹1.30 lakh in hilly/NE states for house construction",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "BPL Certificate",
+      "Bank Account",
+      "Land Ownership Proof"
+    ],
     "applicationProcess": "Apply through Gram Panchayat. Beneficiaries selected through SECC data. Funds transferred directly to bank account.",
     "applicationUrl": "https://pmayg.nic.in",
     "helplineNumber": "1800-11-6446",
-    "tags": ["housing", "rural", "gramin", "pucca house", "BPL", "construction"],
+    "tags": [
+      "housing",
+      "rural",
+      "gramin",
+      "pucca house",
+      "BPL",
+      "construction"
+    ],
     "imageUrl": null
   },
   {
@@ -104,13 +262,48 @@
     "launchYear": 2015,
     "status": "active",
     "featured": true,
-    "eligibility": { "minAge": 18, "maxAge": 65, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["entrepreneur", "self-employed"] },
-    "benefits": [{ "type": "loan", "amount": 1000000, "description": "Shishu: up to ₹50K | Kishor: ₹50K-5L | Tarun: ₹5L-10L. No collateral required.", "frequency": "one-time" }],
-    "documents": ["Identity Proof", "Address Proof", "Business Plan", "Bank Statement 6 months", "Photographs"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 65,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "entrepreneur",
+        "self-employed"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "loan",
+        "amount": 1000000,
+        "description": "Shishu: up to ₹50K | Kishor: ₹50K-5L | Tarun: ₹5L-10L. No collateral required.",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Identity Proof",
+      "Address Proof",
+      "Business Plan",
+      "Bank Statement 6 months",
+      "Photographs"
+    ],
     "applicationProcess": "Apply at any bank, NBFC, or MFI. Fill MUDRA loan application. No collateral needed. Simple documentation.",
     "applicationUrl": "https://www.mudra.org.in",
     "helplineNumber": "1800-180-1111",
-    "tags": ["loan", "startup", "MSME", "entrepreneur", "self-employment", "mudra"],
+    "tags": [
+      "loan",
+      "startup",
+      "MSME",
+      "entrepreneur",
+      "self-employment",
+      "mudra"
+    ],
     "imageUrl": null
   },
   {
@@ -123,13 +316,47 @@
     "launchYear": 2015,
     "status": "active",
     "featured": true,
-    "eligibility": { "minAge": 15, "maxAge": 45, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["student", "unemployed"] },
-    "benefits": [{ "type": "education", "amount": 8000, "description": "Free training + govt certificate + ₹8000 reward on clearing assessment + job placement", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "10th/12th Marksheet", "Photograph", "Bank Account"],
+    "eligibility": {
+      "minAge": 15,
+      "maxAge": 45,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "student",
+        "unemployed"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "education",
+        "amount": 8000,
+        "description": "Free training + govt certificate + ₹8000 reward on clearing assessment + job placement",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "10th/12th Marksheet",
+      "Photograph",
+      "Bank Account"
+    ],
     "applicationProcess": "Register at pmkvyofficial.org or visit nearest PMKVY Training Centre. Choose from 300+ courses.",
     "applicationUrl": "https://pmkvyofficial.org",
     "helplineNumber": "1800-123-9626",
-    "tags": ["skill", "youth", "training", "certification", "vocational", "employment"],
+    "tags": [
+      "skill",
+      "youth",
+      "training",
+      "certification",
+      "vocational",
+      "employment"
+    ],
     "imageUrl": null
   },
   {
@@ -142,13 +369,43 @@
     "launchYear": 1995,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 60, "maxAge": 100, "gender": "all", "incomeLimit": 84000, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "pension", "amount": 500, "description": "₹200-500/month pension depending on age (60-79: ₹200, 80+: ₹500)", "frequency": "monthly" }],
-    "documents": ["Age Proof", "BPL Ration Card", "Aadhaar Card", "Bank Account"],
+    "eligibility": {
+      "minAge": 60,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": 84000,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "pension",
+        "amount": 500,
+        "description": "₹200-500/month pension depending on age (60-79: ₹200, 80+: ₹500)",
+        "frequency": "monthly"
+      }
+    ],
+    "documents": [
+      "Age Proof",
+      "BPL Ration Card",
+      "Aadhaar Card",
+      "Bank Account"
+    ],
     "applicationProcess": "Apply at Gram Panchayat or Block Development Office with documents. Pension credited monthly.",
     "applicationUrl": "https://nsap.nic.in",
     "helplineNumber": "1800-11-3377",
-    "tags": ["pension", "elderly", "senior citizen", "BPL", "widow", "disability"],
+    "tags": [
+      "pension",
+      "elderly",
+      "senior citizen",
+      "BPL",
+      "widow",
+      "disability"
+    ],
     "imageUrl": null
   },
   {
@@ -161,13 +418,43 @@
     "launchYear": 2015,
     "status": "active",
     "featured": true,
-    "eligibility": { "minAge": 0, "maxAge": 10, "gender": "female", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "financial", "amount": null, "description": "8.2% annual interest, tax-free maturity amount, ₹250 min deposit, ₹1.5L max/year", "frequency": "annually" }],
-    "documents": ["Girl's Birth Certificate", "Parent's Aadhaar", "Parent's Address Proof", "Photograph"],
+    "eligibility": {
+      "minAge": 0,
+      "maxAge": 10,
+      "gender": "female",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "financial",
+        "amount": null,
+        "description": "8.2% annual interest, tax-free maturity amount, ₹250 min deposit, ₹1.5L max/year",
+        "frequency": "annually"
+      }
+    ],
+    "documents": [
+      "Girl's Birth Certificate",
+      "Parent's Aadhaar",
+      "Parent's Address Proof",
+      "Photograph"
+    ],
     "applicationProcess": "Open account at any Post Office or authorized bank. Minimum deposit ₹250. Account matures after 21 years.",
     "applicationUrl": "https://www.indiapost.gov.in",
     "helplineNumber": "1800-266-6868",
-    "tags": ["girl child", "savings", "education", "marriage", "tax free", "sukanya"],
+    "tags": [
+      "girl child",
+      "savings",
+      "education",
+      "marriage",
+      "tax free",
+      "sukanya"
+    ],
     "imageUrl": null
   },
   {
@@ -180,13 +467,41 @@
     "launchYear": 2015,
     "status": "active",
     "featured": true,
-    "eligibility": { "minAge": 18, "maxAge": 40, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "pension", "amount": 5000, "description": "Guaranteed pension ₹1000-5000/month after 60 years. Govt co-contributes 50% for 5 years", "frequency": "monthly" }],
-    "documents": ["Aadhaar Card", "Bank Account", "Mobile Number"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 40,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "pension",
+        "amount": 5000,
+        "description": "Guaranteed pension ₹1000-5000/month after 60 years. Govt co-contributes 50% for 5 years",
+        "frequency": "monthly"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account",
+      "Mobile Number"
+    ],
     "applicationProcess": "Apply at bank branch or through net banking. Fill APY form. Auto-debit from savings account monthly.",
     "applicationUrl": "https://enps.nsdl.com",
     "helplineNumber": "1800-110-069",
-    "tags": ["pension", "retirement", "unorganized sector", "savings", "atal"],
+    "tags": [
+      "pension",
+      "retirement",
+      "unorganized sector",
+      "savings",
+      "atal"
+    ],
     "imageUrl": null
   },
   {
@@ -199,13 +514,41 @@
     "launchYear": 2015,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 50, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "insurance", "amount": 200000, "description": "₹2 lakh life insurance cover for death due to any cause. Premium ₹436/year auto-debited", "frequency": "one-time" }],
-    "documents": ["Bank Account with Aadhaar link", "Aadhaar Card", "Consent form"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 50,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "insurance",
+        "amount": 200000,
+        "description": "₹2 lakh life insurance cover for death due to any cause. Premium ₹436/year auto-debited",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Bank Account with Aadhaar link",
+      "Aadhaar Card",
+      "Consent form"
+    ],
     "applicationProcess": "Apply at bank or via internet banking/mobile app. Just fill one-page consent. Premium auto-debited on 1st June each year.",
     "applicationUrl": "https://jansuraksha.gov.in",
     "helplineNumber": "1800-180-1111",
-    "tags": ["life insurance", "death cover", "bank", "low premium", "jeevan jyoti"],
+    "tags": [
+      "life insurance",
+      "death cover",
+      "bank",
+      "low premium",
+      "jeevan jyoti"
+    ],
     "imageUrl": null
   },
   {
@@ -218,13 +561,41 @@
     "launchYear": 2015,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 70, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "insurance", "amount": 200000, "description": "₹2L for accidental death, ₹1L for permanent partial disability at just ₹20/year premium", "frequency": "one-time" }],
-    "documents": ["Bank Account", "Aadhaar Card", "Consent form"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 70,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "insurance",
+        "amount": 200000,
+        "description": "₹2L for accidental death, ₹1L for permanent partial disability at just ₹20/year premium",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Bank Account",
+      "Aadhaar Card",
+      "Consent form"
+    ],
     "applicationProcess": "Apply at bank or online via net banking. Premium of ₹20/year auto-debited from June 1.",
     "applicationUrl": "https://jansuraksha.gov.in",
     "helplineNumber": "1800-180-1111",
-    "tags": ["accident insurance", "disability", "low premium", "bank", "suraksha"],
+    "tags": [
+      "accident insurance",
+      "disability",
+      "low premium",
+      "bank",
+      "suraksha"
+    ],
     "imageUrl": null
   },
   {
@@ -237,13 +608,46 @@
     "launchYear": 2020,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 65, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["self-employed"] },
-    "benefits": [{ "type": "loan", "amount": 50000, "description": "₹10K (1st loan), ₹20K (2nd), ₹50K (3rd) — collateral free, digital repayment incentive", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "Vendor ID/CoE Certificate", "Bank Account", "Mobile Number"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 65,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "self-employed"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "loan",
+        "amount": 50000,
+        "description": "₹10K (1st loan), ₹20K (2nd), ₹50K (3rd) — collateral free, digital repayment incentive",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Vendor ID/CoE Certificate",
+      "Bank Account",
+      "Mobile Number"
+    ],
     "applicationProcess": "Apply at pmsvanidhi.mohua.gov.in or through Urban Local Body. Digital transactions earn cashback reward.",
     "applicationUrl": "https://pmsvanidhi.mohua.gov.in",
     "helplineNumber": "1800-11-1979",
-    "tags": ["street vendor", "hawker", "loan", "COVID", "urban poor", "working capital"],
+    "tags": [
+      "street vendor",
+      "hawker",
+      "loan",
+      "COVID",
+      "urban poor",
+      "working capital"
+    ],
     "imageUrl": null
   },
   {
@@ -256,13 +660,50 @@
     "launchYear": 2015,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 5, "maxAge": 35, "gender": "all", "incomeLimit": 250000, "caste": ["sc", "st", "obc"], "states": ["all"], "occupation": ["student"] },
-    "benefits": [{ "type": "scholarship", "amount": 10000, "description": "₹500-₹10,000/year scholarship depending on class and category", "frequency": "annually" }],
-    "documents": ["Aadhaar Card", "Bank Account", "Marksheet", "Caste Certificate", "Income Certificate"],
+    "eligibility": {
+      "minAge": 5,
+      "maxAge": 35,
+      "gender": "all",
+      "incomeLimit": 250000,
+      "caste": [
+        "sc",
+        "st",
+        "obc"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "student"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "scholarship",
+        "amount": 10000,
+        "description": "₹500-₹10,000/year scholarship depending on class and category",
+        "frequency": "annually"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account",
+      "Marksheet",
+      "Caste Certificate",
+      "Income Certificate"
+    ],
     "applicationProcess": "Register at scholarships.gov.in. Apply before October deadline each year. Documents verified by institution.",
     "applicationUrl": "https://scholarships.gov.in",
     "helplineNumber": "0120-6619540",
-    "tags": ["scholarship", "student", "SC", "ST", "OBC", "minority", "education"],
+    "tags": [
+      "scholarship",
+      "student",
+      "SC",
+      "ST",
+      "OBC",
+      "minority",
+      "education"
+    ],
     "imageUrl": null
   },
   {
@@ -275,13 +716,42 @@
     "launchYear": 2015,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 0, "maxAge": 18, "gender": "female", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "financial", "amount": null, "description": "Education grants, conditional cash transfers, linked Sukanya Samriddhi account benefits", "frequency": "annually" }],
-    "documents": ["Girl's Birth Certificate", "School Enrollment Certificate", "Parent's Aadhaar"],
+    "eligibility": {
+      "minAge": 0,
+      "maxAge": 18,
+      "gender": "female",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "financial",
+        "amount": null,
+        "description": "Education grants, conditional cash transfers, linked Sukanya Samriddhi account benefits",
+        "frequency": "annually"
+      }
+    ],
+    "documents": [
+      "Girl's Birth Certificate",
+      "School Enrollment Certificate",
+      "Parent's Aadhaar"
+    ],
     "applicationProcess": "Contact nearest Anganwadi centre, health department, or district women & child development office.",
     "applicationUrl": "https://wcd.nic.in",
     "helplineNumber": "181",
-    "tags": ["girl child", "education", "women", "BBBP", "sex ratio", "literacy"],
+    "tags": [
+      "girl child",
+      "education",
+      "women",
+      "BBBP",
+      "sex ratio",
+      "literacy"
+    ],
     "imageUrl": null
   },
   {
@@ -294,13 +764,46 @@
     "launchYear": 2005,
     "status": "active",
     "featured": true,
-    "eligibility": { "minAge": 18, "maxAge": 100, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["unemployed"] },
-    "benefits": [{ "type": "employment", "amount": 30000, "description": "100 days guaranteed work at ₹200-400/day. Wages within 15 days. Unemployment allowance if work denied.", "frequency": "annually" }],
-    "documents": ["Aadhaar Card", "Ration Card", "Residence Proof", "Bank/Post Office Account"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "unemployed"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "employment",
+        "amount": 30000,
+        "description": "100 days guaranteed work at ₹200-400/day. Wages within 15 days. Unemployment allowance if work denied.",
+        "frequency": "annually"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card",
+      "Residence Proof",
+      "Bank/Post Office Account"
+    ],
     "applicationProcess": "Apply at Gram Panchayat for Job Card. Works assigned within 15 days of demand. Any rural adult can demand work.",
     "applicationUrl": "https://nrega.nic.in",
     "helplineNumber": "1800-111-555",
-    "tags": ["employment", "MGNREGA", "rural", "daily wages", "job guarantee", "manual work"],
+    "tags": [
+      "employment",
+      "MGNREGA",
+      "rural",
+      "daily wages",
+      "job guarantee",
+      "manual work"
+    ],
     "imageUrl": null
   },
   {
@@ -313,13 +816,46 @@
     "launchYear": 2016,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 100, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["farmer"] },
-    "benefits": [{ "type": "insurance", "amount": null, "description": "Full crop loss compensation. Premium 2% Kharif, 1.5% Rabi, 5% commercial. Govt pays rest.", "frequency": "annually" }],
-    "documents": ["Land Records", "Bank Account", "Aadhaar Card", "Sowing Certificate"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "farmer"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "insurance",
+        "amount": null,
+        "description": "Full crop loss compensation. Premium 2% Kharif, 1.5% Rabi, 5% commercial. Govt pays rest.",
+        "frequency": "annually"
+      }
+    ],
+    "documents": [
+      "Land Records",
+      "Bank Account",
+      "Aadhaar Card",
+      "Sowing Certificate"
+    ],
     "applicationProcess": "Enroll through bank (if availing crop loan - mandatory) or CSC/AgriInsurance portal before cut-off date.",
     "applicationUrl": "https://pmfby.gov.in",
     "helplineNumber": "1800-200-7710",
-    "tags": ["crop insurance", "farmer", "agriculture", "kharif", "rabi", "natural disaster"],
+    "tags": [
+      "crop insurance",
+      "farmer",
+      "agriculture",
+      "kharif",
+      "rabi",
+      "natural disaster"
+    ],
     "imageUrl": null
   },
   {
@@ -332,13 +868,46 @@
     "launchYear": 2019,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 40, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["farmer"] },
-    "benefits": [{ "type": "pension", "amount": 3000, "description": "₹3,000/month pension after age 60. Government matches farmer's contribution of ₹55-200/month.", "frequency": "monthly" }],
-    "documents": ["Aadhaar Card", "Land Records (below 2 hectares)", "Bank Account", "Mobile Number"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 40,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "farmer"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "pension",
+        "amount": 3000,
+        "description": "₹3,000/month pension after age 60. Government matches farmer's contribution of ₹55-200/month.",
+        "frequency": "monthly"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Land Records (below 2 hectares)",
+      "Bank Account",
+      "Mobile Number"
+    ],
     "applicationProcess": "Enroll at nearest CSC or through PM Kisan portal. Contribution via auto-debit from PM Kisan installment.",
     "applicationUrl": "https://pmkmy.gov.in",
     "helplineNumber": "155261",
-    "tags": ["pension", "farmer", "agriculture", "old age", "retirement", "mandhan"],
+    "tags": [
+      "pension",
+      "farmer",
+      "agriculture",
+      "old age",
+      "retirement",
+      "mandhan"
+    ],
     "imageUrl": null
   },
   {
@@ -351,13 +920,46 @@
     "launchYear": 2021,
     "status": "active",
     "featured": true,
-    "eligibility": { "minAge": 18, "maxAge": 60, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["entrepreneur"] },
-    "benefits": [{ "type": "financial", "amount": 2000000, "description": "Grants up to ₹20L for POC/prototype, loans up to ₹50L for market entry at 3% interest", "frequency": "one-time" }],
-    "documents": ["DPIIT Registration", "Business Plan", "Incorporation Certificate", "Bank Account"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 60,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "entrepreneur"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "financial",
+        "amount": 2000000,
+        "description": "Grants up to ₹20L for POC/prototype, loans up to ₹50L for market entry at 3% interest",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "DPIIT Registration",
+      "Business Plan",
+      "Incorporation Certificate",
+      "Bank Account"
+    ],
     "applicationProcess": "Apply through recognized incubators selected by DPIIT at startupindia.gov.in. Pitch to incubator committee.",
     "applicationUrl": "https://startupindia.gov.in",
     "helplineNumber": "1800-115-565",
-    "tags": ["startup", "entrepreneur", "seed fund", "innovation", "technology", "DPIIT"],
+    "tags": [
+      "startup",
+      "entrepreneur",
+      "seed fund",
+      "innovation",
+      "technology",
+      "DPIIT"
+    ],
     "imageUrl": null
   },
   {
@@ -370,13 +972,41 @@
     "launchYear": 2021,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 16, "maxAge": 59, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "insurance", "amount": 200000, "description": "Free e-Shram UAN card + ₹2L accident insurance + priority access to all central welfare schemes", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card (linked with mobile)", "Bank Account"],
+    "eligibility": {
+      "minAge": 16,
+      "maxAge": 59,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "insurance",
+        "amount": 200000,
+        "description": "Free e-Shram UAN card + ₹2L accident insurance + priority access to all central welfare schemes",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card (linked with mobile)",
+      "Bank Account"
+    ],
     "applicationProcess": "Self-register at eshram.gov.in or at CSC for free. Takes 5 minutes. Get UAN card instantly.",
     "applicationUrl": "https://eshram.gov.in",
     "helplineNumber": "14434",
-    "tags": ["labour", "unorganized worker", "construction", "domestic worker", "e-shram", "UAN"],
+    "tags": [
+      "labour",
+      "unorganized worker",
+      "construction",
+      "domestic worker",
+      "e-shram",
+      "UAN"
+    ],
     "imageUrl": null
   },
   {
@@ -389,13 +1019,46 @@
     "launchYear": 2006,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 16, "maxAge": 30, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["student"] },
-    "benefits": [{ "type": "scholarship", "amount": 36000, "description": "₹3,000/month for boys and ₹3,600/month for girls for up to 5 years of study", "frequency": "monthly" }],
-    "documents": ["Service Certificate of Parent", "Marksheet (60%+ required)", "Aadhaar Card", "Bank Details"],
+    "eligibility": {
+      "minAge": 16,
+      "maxAge": 30,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "student"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "scholarship",
+        "amount": 36000,
+        "description": "₹3,000/month for boys and ₹3,600/month for girls for up to 5 years of study",
+        "frequency": "monthly"
+      }
+    ],
+    "documents": [
+      "Service Certificate of Parent",
+      "Marksheet (60%+ required)",
+      "Aadhaar Card",
+      "Bank Details"
+    ],
     "applicationProcess": "Apply through National Scholarship Portal (scholarships.gov.in). Registration opens annually in October.",
     "applicationUrl": "https://scholarships.gov.in",
     "helplineNumber": "0120-6619540",
-    "tags": ["scholarship", "CAPF", "police", "defence", "professional degree", "student"],
+    "tags": [
+      "scholarship",
+      "CAPF",
+      "police",
+      "defence",
+      "professional degree",
+      "student"
+    ],
     "imageUrl": null
   },
   {
@@ -408,13 +1071,46 @@
     "launchYear": 2014,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 15, "maxAge": 35, "gender": "all", "incomeLimit": 120000, "caste": ["all"], "states": ["all"], "occupation": ["unemployed"] },
-    "benefits": [{ "type": "employment", "amount": 15000, "description": "Free residential training, ₹1,000 stipend/month, job placement + follow-up for 2 years", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "BPL Certificate", "8th/10th Certificate", "Bank Account"],
+    "eligibility": {
+      "minAge": 15,
+      "maxAge": 35,
+      "gender": "all",
+      "incomeLimit": 120000,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "unemployed"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "employment",
+        "amount": 15000,
+        "description": "Free residential training, ₹1,000 stipend/month, job placement + follow-up for 2 years",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "BPL Certificate",
+      "8th/10th Certificate",
+      "Bank Account"
+    ],
     "applicationProcess": "Contact nearest DDU-GKY Project Implementing Agency (PIA) or visit ddugky.gov.in.",
     "applicationUrl": "https://ddugky.gov.in",
     "helplineNumber": "1800-180-6127",
-    "tags": ["skill", "rural youth", "BPL", "placement", "residential", "DDU-GKY"],
+    "tags": [
+      "skill",
+      "rural youth",
+      "BPL",
+      "placement",
+      "residential",
+      "DDU-GKY"
+    ],
     "imageUrl": null
   },
   {
@@ -427,13 +1123,41 @@
     "launchYear": 2014,
     "status": "active",
     "featured": true,
-    "eligibility": { "minAge": 10, "maxAge": 100, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "financial", "amount": 230000, "description": "Zero-balance account + RuPay card + ₹2L accident cover + ₹30K life cover + ₹10K overdraft", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "One Passport Photo"],
+    "eligibility": {
+      "minAge": 10,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "financial",
+        "amount": 230000,
+        "description": "Zero-balance account + RuPay card + ₹2L accident cover + ₹30K life cover + ₹10K overdraft",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "One Passport Photo"
+    ],
     "applicationProcess": "Visit any bank branch or Business Correspondent. Fill PMJDY form. Account opened same day.",
     "applicationUrl": "https://pmjdy.gov.in",
     "helplineNumber": "1800-11-0001",
-    "tags": ["banking", "financial inclusion", "zero balance", "RuPay", "Jan Dhan", "account"],
+    "tags": [
+      "banking",
+      "financial inclusion",
+      "zero balance",
+      "RuPay",
+      "Jan Dhan",
+      "account"
+    ],
     "imageUrl": null
   },
   {
@@ -446,13 +1170,46 @@
     "launchYear": 1998,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 75, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["farmer"] },
-    "benefits": [{ "type": "loan", "amount": 300000, "description": "Credit limit up to ₹3 lakh at 4% effective interest (7% minus 3% subvention) for crop seasons", "frequency": "annually" }],
-    "documents": ["Land Records", "Aadhaar Card", "Bank Account", "Photographs"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 75,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "farmer"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "loan",
+        "amount": 300000,
+        "description": "Credit limit up to ₹3 lakh at 4% effective interest (7% minus 3% subvention) for crop seasons",
+        "frequency": "annually"
+      }
+    ],
+    "documents": [
+      "Land Records",
+      "Aadhaar Card",
+      "Bank Account",
+      "Photographs"
+    ],
     "applicationProcess": "Apply at nearest bank branch with land records. Credit limit based on land holding and cultivation cost.",
     "applicationUrl": "https://pmkisan.gov.in",
     "helplineNumber": "1551",
-    "tags": ["farmer", "credit", "loan", "kisan", "crop", "interest subsidy"],
+    "tags": [
+      "farmer",
+      "credit",
+      "loan",
+      "kisan",
+      "crop",
+      "interest subsidy"
+    ],
     "imageUrl": null
   },
   {
@@ -465,13 +1222,47 @@
     "launchYear": 2023,
     "status": "active",
     "featured": true,
-    "eligibility": { "minAge": 18, "maxAge": 70, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["self-employed"] },
-    "benefits": [{ "type": "financial", "amount": 300000, "description": "₹15K toolkit grant, ₹1L (1st) + ₹2L (2nd) collateral-free loan at 5%, ₹500/day stipend during training", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "Proof of occupation as artisan/craftsman", "Bank Account", "Mobile Number"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 70,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "self-employed"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "financial",
+        "amount": 300000,
+        "description": "₹15K toolkit grant, ₹1L (1st) + ₹2L (2nd) collateral-free loan at 5%, ₹500/day stipend during training",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Proof of occupation as artisan/craftsman",
+      "Bank Account",
+      "Mobile Number"
+    ],
     "applicationProcess": "Register at pmvishwakarma.gov.in or nearest CSC. Verify trade through Gram Panchayat. Enroll in training.",
     "applicationUrl": "https://pmvishwakarma.gov.in",
     "helplineNumber": "18002677777",
-    "tags": ["artisan", "craftsman", "carpenter", "blacksmith", "potter", "vishwakarma", "traditional"],
+    "tags": [
+      "artisan",
+      "craftsman",
+      "carpenter",
+      "blacksmith",
+      "potter",
+      "vishwakarma",
+      "traditional"
+    ],
     "imageUrl": null
   },
   {
@@ -484,13 +1275,40 @@
     "launchYear": 2018,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 0, "maxAge": 100, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "healthcare", "amount": null, "description": "Free OPD, medicines, diagnostics, maternal care, child immunization, NCD management at nearest HWC", "frequency": "one-time" }],
-    "documents": ["Any ID proof or self-declaration"],
+    "eligibility": {
+      "minAge": 0,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "healthcare",
+        "amount": null,
+        "description": "Free OPD, medicines, diagnostics, maternal care, child immunization, NCD management at nearest HWC",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Any ID proof or self-declaration"
+    ],
     "applicationProcess": "Simply visit the nearest Ayushman Bharat Health and Wellness Centre (HWC). No registration required.",
     "applicationUrl": "https://abdm.gov.in",
     "helplineNumber": "14477",
-    "tags": ["health", "primary care", "free medicine", "rural", "community health", "HWC"],
+    "tags": [
+      "health",
+      "primary care",
+      "free medicine",
+      "rural",
+      "community health",
+      "HWC"
+    ],
     "imageUrl": null
   },
   {
@@ -503,13 +1321,48 @@
     "launchYear": 2008,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 13, "maxAge": 18, "gender": "all", "incomeLimit": 150000, "caste": ["all"], "states": ["all"], "occupation": ["student"] },
-    "benefits": [{ "type": "scholarship", "amount": 12000, "description": "₹12,000/year (₹1,000/month) for Classes 9-12 paid by SBI directly to student account", "frequency": "annually" }],
-    "documents": ["Aadhaar Card", "8th Class Marksheet (55%+ required)", "Income Certificate", "Bank Account"],
+    "eligibility": {
+      "minAge": 13,
+      "maxAge": 18,
+      "gender": "all",
+      "incomeLimit": 150000,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "student"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "scholarship",
+        "amount": 12000,
+        "description": "₹12,000/year (₹1,000/month) for Classes 9-12 paid by SBI directly to student account",
+        "frequency": "annually"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "8th Class Marksheet (55%+ required)",
+      "Income Certificate",
+      "Bank Account"
+    ],
     "applicationProcess": "Appear in State Level Examination for Selection of NMMS. Apply online at scholarships.gov.in after selection.",
     "applicationUrl": "https://scholarships.gov.in",
     "helplineNumber": "0120-6619540",
-    "tags": ["scholarship", "student", "merit", "class 9", "class 10", "class 11", "class 12", "EWS"],
+    "tags": [
+      "scholarship",
+      "student",
+      "merit",
+      "class 9",
+      "class 10",
+      "class 11",
+      "class 12",
+      "EWS"
+    ],
     "imageUrl": null
   },
   {
@@ -522,13 +1375,42 @@
     "launchYear": 2008,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 0, "maxAge": 100, "gender": "all", "incomeLimit": 84000, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "insurance", "amount": 30000, "description": "₹30,000 annual cashless hospitalization coverage for BPL families + ₹1L in some states", "frequency": "annually" }],
-    "documents": ["BPL Card", "Aadhaar Card", "Family Photo"],
+    "eligibility": {
+      "minAge": 0,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": 84000,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "insurance",
+        "amount": 30000,
+        "description": "₹30,000 annual cashless hospitalization coverage for BPL families + ₹1L in some states",
+        "frequency": "annually"
+      }
+    ],
+    "documents": [
+      "BPL Card",
+      "Aadhaar Card",
+      "Family Photo"
+    ],
     "applicationProcess": "Enroll through district or block level social welfare office. Smart card issued with biometric enrollment.",
     "applicationUrl": "https://nhm.gov.in",
     "helplineNumber": "104",
-    "tags": ["health insurance", "BPL", "hospitalization", "cashless", "smart card", "unorganized"],
+    "tags": [
+      "health insurance",
+      "BPL",
+      "hospitalization",
+      "cashless",
+      "smart card",
+      "unorganized"
+    ],
     "imageUrl": null
   },
   {
@@ -541,13 +1423,49 @@
     "launchYear": 2016,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 65, "gender": "all", "incomeLimit": null, "caste": ["sc", "st"], "states": ["all"], "occupation": ["entrepreneur"] },
-    "benefits": [{ "type": "loan", "amount": 10000000, "description": "₹10L to ₹1Cr composite loan (75% project cost) at base rate + 3%, 7 year repayment", "frequency": "one-time" }],
-    "documents": ["Identity Proof", "Address Proof", "Business Plan", "Caste Certificate (SC/ST)", "Bank 6-month statement"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 65,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "sc",
+        "st"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "entrepreneur"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "loan",
+        "amount": 10000000,
+        "description": "₹10L to ₹1Cr composite loan (75% project cost) at base rate + 3%, 7 year repayment",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Identity Proof",
+      "Address Proof",
+      "Business Plan",
+      "Caste Certificate (SC/ST)",
+      "Bank 6-month statement"
+    ],
     "applicationProcess": "Apply at bank branch or at standupmitra.in portal. SIDBI and NABARD provide handholding support.",
     "applicationUrl": "https://standupmitra.in",
     "helplineNumber": "1800-180-1111",
-    "tags": ["SC", "ST", "women", "entrepreneur", "loan", "greenfield", "manufacturing"],
+    "tags": [
+      "SC",
+      "ST",
+      "women",
+      "entrepreneur",
+      "loan",
+      "greenfield",
+      "manufacturing"
+    ],
     "imageUrl": null
   },
   {
@@ -560,13 +1478,44 @@
     "launchYear": 2005,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 14, "maxAge": 45, "gender": "female", "incomeLimit": 120000, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "financial", "amount": 1400, "description": "₹1,400 (rural) or ₹1,000 (urban) cash benefit on institutional delivery + ASHA incentive", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "BPL Certificate", "MCH Card / ANC Card", "Bank Account"],
+    "eligibility": {
+      "minAge": 14,
+      "maxAge": 45,
+      "gender": "female",
+      "incomeLimit": 120000,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "financial",
+        "amount": 1400,
+        "description": "₹1,400 (rural) or ₹1,000 (urban) cash benefit on institutional delivery + ASHA incentive",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "BPL Certificate",
+      "MCH Card / ANC Card",
+      "Bank Account"
+    ],
     "applicationProcess": "Register with nearest ASHA or ANM worker. Ensure ANC check-ups. Cash transferred after institutional delivery.",
     "applicationUrl": "https://nhm.gov.in",
     "helplineNumber": "104",
-    "tags": ["pregnant", "maternal", "delivery", "hospital", "BPL", "mother", "child"],
+    "tags": [
+      "pregnant",
+      "maternal",
+      "delivery",
+      "hospital",
+      "BPL",
+      "mother",
+      "child"
+    ],
     "imageUrl": null
   },
   {
@@ -579,13 +1528,43 @@
     "launchYear": 1995,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 5, "maxAge": 14, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["student"] },
-    "benefits": [{ "type": "education", "amount": null, "description": "Free daily nutritious meal at school + nutrition support improving attendance and learning", "frequency": "monthly" }],
-    "documents": ["School Enrollment"],
+    "eligibility": {
+      "minAge": 5,
+      "maxAge": 14,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "student"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "education",
+        "amount": null,
+        "description": "Free daily nutritious meal at school + nutrition support improving attendance and learning",
+        "frequency": "monthly"
+      }
+    ],
+    "documents": [
+      "School Enrollment"
+    ],
     "applicationProcess": "Automatically available to all students enrolled in government and aided schools (Class 1-8).",
     "applicationUrl": "https://pmposhan.education.gov.in",
     "helplineNumber": "1800-11-8002",
-    "tags": ["nutrition", "school meal", "student", "free food", "education", "midday"],
+    "tags": [
+      "nutrition",
+      "school meal",
+      "student",
+      "free food",
+      "education",
+      "midday"
+    ],
     "imageUrl": null
   },
   {
@@ -598,13 +1577,43 @@
     "launchYear": 2021,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 0, "maxAge": 18, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "financial", "amount": 1000000, "description": "₹10L at age 23, free school education, monthly stipend from 18, Ayushman Bharat cover", "frequency": "one-time" }],
-    "documents": ["Death Certificate of Parent (COVID)", "Birth Certificate", "Legal Guardian proof", "Bank Account"],
+    "eligibility": {
+      "minAge": 0,
+      "maxAge": 18,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "financial",
+        "amount": 1000000,
+        "description": "₹10L at age 23, free school education, monthly stipend from 18, Ayushman Bharat cover",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Death Certificate of Parent (COVID)",
+      "Birth Certificate",
+      "Legal Guardian proof",
+      "Bank Account"
+    ],
     "applicationProcess": "Apply at District Child Protection Unit or District Magistrate office with COVID-related death certificate of parents.",
     "applicationUrl": "https://pmcaresforchildren.in",
     "helplineNumber": "1800-11-0001",
-    "tags": ["COVID", "orphan", "children", "education", "corpus", "welfare"],
+    "tags": [
+      "COVID",
+      "orphan",
+      "children",
+      "education",
+      "corpus",
+      "welfare"
+    ],
     "imageUrl": null
   },
   {
@@ -617,13 +1626,47 @@
     "launchYear": 2006,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 16, "maxAge": 30, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["student"] },
-    "benefits": [{ "type": "scholarship", "amount": 43200, "description": "₹3000/month (boys) or ₹3600/month (girls) for professional degree/diploma courses for max 5 years", "frequency": "monthly" }],
-    "documents": ["Ex-serviceman PPO/Discharge Book", "Aadhaar Card", "Marksheet with 60%+ marks", "Bank Account details", "College fee receipt"],
+    "eligibility": {
+      "minAge": 16,
+      "maxAge": 30,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "student"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "scholarship",
+        "amount": 43200,
+        "description": "₹3000/month (boys) or ₹3600/month (girls) for professional degree/diploma courses for max 5 years",
+        "frequency": "monthly"
+      }
+    ],
+    "documents": [
+      "Ex-serviceman PPO/Discharge Book",
+      "Aadhaar Card",
+      "Marksheet with 60%+ marks",
+      "Bank Account details",
+      "College fee receipt"
+    ],
     "applicationProcess": "Apply online at https://ksb.gov.in. Registration window opens annually. Shortlisted candidates receive scholarship via DBT.",
     "applicationUrl": "https://ksb.gov.in/pm-scholarship.htm",
     "helplineNumber": "011-26715250",
-    "tags": ["scholarship", "ex-servicemen", "defence", "professional course", "widow", "KSB"],
+    "tags": [
+      "scholarship",
+      "ex-servicemen",
+      "defence",
+      "professional course",
+      "widow",
+      "KSB"
+    ],
     "imageUrl": null
   },
   {
@@ -636,13 +1679,47 @@
     "launchYear": 2020,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 30, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["student"] },
-    "benefits": [{ "type": "financial", "amount": 10000, "description": "₹10,000 total stipend for 2-month internship + experience certificate from MeitY", "frequency": "one-time" }],
-    "documents": ["College ID / Enrollment Certificate", "Aadhaar Card", "Bank Account details", "Resume/CV"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 30,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "student"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "financial",
+        "amount": 10000,
+        "description": "₹10,000 total stipend for 2-month internship + experience certificate from MeitY",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "College ID / Enrollment Certificate",
+      "Aadhaar Card",
+      "Bank Account details",
+      "Resume/CV"
+    ],
     "applicationProcess": "Apply online at internship.aicte-india.org or directly via MeitY portal. Internships in Jan-Feb and July-Aug cycles.",
     "applicationUrl": "https://internship.aicte-india.org",
     "helplineNumber": "011-29581040",
-    "tags": ["internship", "digital india", "IT", "government", "stipend", "MeitY", "technology"],
+    "tags": [
+      "internship",
+      "digital india",
+      "IT",
+      "government",
+      "stipend",
+      "MeitY",
+      "technology"
+    ],
     "imageUrl": null
   },
   {
@@ -655,13 +1732,48 @@
     "launchYear": 2016,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 14, "maxAge": 35, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["student", "unemployed"] },
-    "benefits": [{ "type": "employment", "amount": 9000, "description": "Stipend ₹5,000-9,000/month during apprenticeship + govt pays 25% + industry certificate", "frequency": "monthly" }],
-    "documents": ["Aadhaar Card", "Educational qualification certificate", "ITI/Diploma certificate (if any)", "Bank Account"],
+    "eligibility": {
+      "minAge": 14,
+      "maxAge": 35,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "student",
+        "unemployed"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "employment",
+        "amount": 9000,
+        "description": "Stipend ₹5,000-9,000/month during apprenticeship + govt pays 25% + industry certificate",
+        "frequency": "monthly"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Educational qualification certificate",
+      "ITI/Diploma certificate (if any)",
+      "Bank Account"
+    ],
     "applicationProcess": "Register at apprenticeshipindia.gov.in. Find apprenticeship openings from 40,000+ companies. Apply directly online.",
     "applicationUrl": "https://apprenticeshipindia.gov.in",
     "helplineNumber": "1800-123-9626",
-    "tags": ["apprentice", "training", "stipend", "industry", "ITI", "certificate", "employment"],
+    "tags": [
+      "apprentice",
+      "training",
+      "stipend",
+      "industry",
+      "ITI",
+      "certificate",
+      "employment"
+    ],
     "imageUrl": null
   },
   {
@@ -674,13 +1786,55 @@
     "launchYear": 2007,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 16, "maxAge": 30, "gender": "all", "incomeLimit": 800000, "caste": ["all"], "states": ["Assam", "Meghalaya", "Manipur", "Nagaland", "Arunachal Pradesh", "Tripura", "Mizoram", "Sikkim"], "occupation": ["student"] },
-    "benefits": [{ "type": "scholarship", "amount": 50400, "description": "Boys: ₹3,600/month, Girls: ₹4,200/month for professional degree programs for up to 5 years", "frequency": "monthly" }],
-    "documents": ["Aadhaar Card", "Domicile certificate of NER/Sikkim", "12th marksheet (60%+)", "College admission letter", "Bank Account"],
+    "eligibility": {
+      "minAge": 16,
+      "maxAge": 30,
+      "gender": "all",
+      "incomeLimit": 800000,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "Assam",
+        "Meghalaya",
+        "Manipur",
+        "Nagaland",
+        "Arunachal Pradesh",
+        "Tripura",
+        "Mizoram",
+        "Sikkim"
+      ],
+      "occupation": [
+        "student"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "scholarship",
+        "amount": 50400,
+        "description": "Boys: ₹3,600/month, Girls: ₹4,200/month for professional degree programs for up to 5 years",
+        "frequency": "monthly"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile certificate of NER/Sikkim",
+      "12th marksheet (60%+)",
+      "College admission letter",
+      "Bank Account"
+    ],
     "applicationProcess": "Apply at scholarships.gov.in under National Scholarship Portal. Select the NER/Sikkim PM Scholarship scheme.",
     "applicationUrl": "https://scholarships.gov.in",
     "helplineNumber": "0120-6619540",
-    "tags": ["NER", "northeast", "Sikkim", "scholarship", "professional", "student", "education"],
+    "tags": [
+      "NER",
+      "northeast",
+      "Sikkim",
+      "scholarship",
+      "professional",
+      "student",
+      "education"
+    ],
     "imageUrl": null
   },
   {
@@ -693,13 +1847,44 @@
     "launchYear": 2017,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 60, "maxAge": 100, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "pension", "amount": 9250, "description": "Monthly pension ₹1,000-9,250 depending on investment (max ₹15L), assured 7.4% return", "frequency": "monthly" }],
-    "documents": ["Aadhaar Card", "Age proof (60+ years)", "Bank Account details", "Cancelled cheque", "Address proof"],
+    "eligibility": {
+      "minAge": 60,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "pension",
+        "amount": 9250,
+        "description": "Monthly pension ₹1,000-9,250 depending on investment (max ₹15L), assured 7.4% return",
+        "frequency": "monthly"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Age proof (60+ years)",
+      "Bank Account details",
+      "Cancelled cheque",
+      "Address proof"
+    ],
     "applicationProcess": "Purchase policy online at licindia.in or visit nearest LIC branch. Maximum investment ₹15 lakh per senior citizen.",
     "applicationUrl": "https://licindia.in/Home/Pradhan-Mantri-Vaya-Vandana-Yojana",
     "helplineNumber": "022-68276827",
-    "tags": ["senior citizen", "pension", "LIC", "retirement", "guaranteed return", "investment"],
+    "tags": [
+      "senior citizen",
+      "pension",
+      "LIC",
+      "retirement",
+      "guaranteed return",
+      "investment"
+    ],
     "imageUrl": null
   },
   {
@@ -712,13 +1897,42 @@
     "launchYear": 2017,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 14, "maxAge": 60, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "education", "amount": null, "description": "Free 20-hour digital literacy training + government certificate + placement support at nearest CSC", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "Any Photo ID"],
+    "eligibility": {
+      "minAge": 14,
+      "maxAge": 60,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "education",
+        "amount": null,
+        "description": "Free 20-hour digital literacy training + government certificate + placement support at nearest CSC",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Any Photo ID"
+    ],
     "applicationProcess": "Register at pmgdisha.in or visit nearest Common Service Centre (CSC) for free enrollment. Training conducted locally.",
     "applicationUrl": "https://www.pmgdisha.in",
     "helplineNumber": "1800-3000-3468",
-    "tags": ["digital literacy", "computer training", "rural", "internet", "smartphone", "CSC", "PMGDISHA"],
+    "tags": [
+      "digital literacy",
+      "computer training",
+      "rural",
+      "internet",
+      "smartphone",
+      "CSC",
+      "PMGDISHA"
+    ],
     "imageUrl": null
   },
   {
@@ -731,13 +1945,47 @@
     "launchYear": 2016,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 15, "maxAge": 45, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["unemployed", "student"] },
-    "benefits": [{ "type": "employment", "amount": null, "description": "Free short-term skill training + NSDC certification + placement assistance at nearest PMKK centre", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "Educational certificate", "Bank Account"],
+    "eligibility": {
+      "minAge": 15,
+      "maxAge": 45,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "unemployed",
+        "student"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "employment",
+        "amount": null,
+        "description": "Free short-term skill training + NSDC certification + placement assistance at nearest PMKK centre",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Educational certificate",
+      "Bank Account"
+    ],
     "applicationProcess": "Locate nearest PMKK centre at skillindia.gov.in/pmkk and register directly at the centre or online.",
     "applicationUrl": "https://skillindia.gov.in",
     "helplineNumber": "1800-123-9626",
-    "tags": ["skill training", "PMKK", "vocational", "placement", "NSDC", "certificate", "employment"],
+    "tags": [
+      "skill training",
+      "PMKK",
+      "vocational",
+      "placement",
+      "NSDC",
+      "certificate",
+      "employment"
+    ],
     "imageUrl": null
   },
   {
@@ -750,13 +1998,42 @@
     "launchYear": 1975,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 0, "maxAge": 45, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "healthcare", "amount": null, "description": "Free supplementary nutrition, immunization, health check, pre-school education and referral services", "frequency": "monthly" }],
-    "documents": ["Birth Certificate (for child)", "Aadhaar of mother"],
+    "eligibility": {
+      "minAge": 0,
+      "maxAge": 45,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "healthcare",
+        "amount": null,
+        "description": "Free supplementary nutrition, immunization, health check, pre-school education and referral services",
+        "frequency": "monthly"
+      }
+    ],
+    "documents": [
+      "Birth Certificate (for child)",
+      "Aadhaar of mother"
+    ],
     "applicationProcess": "Visit nearest Anganwadi Centre in your locality. Registration is free and automatic on arrival.",
     "applicationUrl": "https://wcd.nic.in/icds",
     "helplineNumber": "1800-11-2001",
-    "tags": ["child nutrition", "anganwadi", "mother", "immunization", "pre-school", "ICDS", "0-6 years"],
+    "tags": [
+      "child nutrition",
+      "anganwadi",
+      "mother",
+      "immunization",
+      "pre-school",
+      "ICDS",
+      "0-6 years"
+    ],
     "imageUrl": null
   },
   {
@@ -769,13 +2046,47 @@
     "launchYear": 2018,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 0, "maxAge": 100, "gender": "all", "incomeLimit": 200000, "caste": ["all"], "states": ["Maharashtra", "Andhra Pradesh", "Telangana", "Kerala", "Tamil Nadu", "Gujarat"] },
-    "benefits": [{ "type": "insurance", "amount": 1000000, "description": "Total health cover up to ₹10L/year (₹5L PM-JAY + ₹5L state top-up) at empanelled hospitals", "frequency": "annually" }],
-    "documents": ["Aadhaar Card", "Ration Card", "Ayushman Card"],
+    "eligibility": {
+      "minAge": 0,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": 200000,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "Maharashtra",
+        "Andhra Pradesh",
+        "Telangana",
+        "Kerala",
+        "Tamil Nadu",
+        "Gujarat"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "insurance",
+        "amount": 1000000,
+        "description": "Total health cover up to ₹10L/year (₹5L PM-JAY + ₹5L state top-up) at empanelled hospitals",
+        "frequency": "annually"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card",
+      "Ayushman Card"
+    ],
     "applicationProcess": "Eligible through PM-JAY list. Check at pmjay.gov.in or nearest empanelled hospital. Ayushman card covers state top-up.",
     "applicationUrl": "https://pmjay.gov.in",
     "helplineNumber": "14555",
-    "tags": ["health insurance", "state scheme", "hospital", "top-up", "Ayushman", "cashless"],
+    "tags": [
+      "health insurance",
+      "state scheme",
+      "hospital",
+      "top-up",
+      "Ayushman",
+      "cashless"
+    ],
     "imageUrl": null
   },
   {
@@ -788,13 +2099,42 @@
     "launchYear": 2010,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 60, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "pension", "amount": null, "description": "Market-linked pension from age 60. Government co-contributes ₹1,000/year if subscriber contributes ₹1,000-12,000/year", "frequency": "monthly" }],
-    "documents": ["Aadhaar Card", "PAN Card (or Form 60)", "Bank Account"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 60,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "pension",
+        "amount": null,
+        "description": "Market-linked pension from age 60. Government co-contributes ₹1,000/year if subscriber contributes ₹1,000-12,000/year",
+        "frequency": "monthly"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card (or Form 60)",
+      "Bank Account"
+    ],
     "applicationProcess": "Open NPS account at any PoP (Point of Presence) — bank branch, post office, or online at enps.nsdl.com.",
     "applicationUrl": "https://enps.nsdl.com",
     "helplineNumber": "1800-110-069",
-    "tags": ["pension", "NPS", "retirement", "long term savings", "market linked", "low cost"],
+    "tags": [
+      "pension",
+      "NPS",
+      "retirement",
+      "long term savings",
+      "market linked",
+      "low cost"
+    ],
     "imageUrl": null
   },
   {
@@ -807,13 +2147,48 @@
     "launchYear": 2015,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 65, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["self-employed", "entrepreneur"] },
-    "benefits": [{ "type": "loan", "amount": 50000, "description": "Collateral-free loan up to ₹50,000 for micro business. Low interest, quick disbursal, no processing fee", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "PAN / Form 60", "2 passport photos", "Bank statements 6 months", "Business address proof"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 65,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "self-employed",
+        "entrepreneur"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "loan",
+        "amount": 50000,
+        "description": "Collateral-free loan up to ₹50,000 for micro business. Low interest, quick disbursal, no processing fee",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "PAN / Form 60",
+      "2 passport photos",
+      "Bank statements 6 months",
+      "Business address proof"
+    ],
     "applicationProcess": "Apply at mudra.org.in or any bank / NBFC / MFI branch. Simple 1-page form. Amount credited in 7-10 days.",
     "applicationUrl": "https://www.mudra.org.in/Home/DownloadForm",
     "helplineNumber": "1800-180-1111",
-    "tags": ["micro loan", "MUDRA Shishu", "small business", "working capital", "no collateral", "MFI"],
+    "tags": [
+      "micro loan",
+      "MUDRA Shishu",
+      "small business",
+      "working capital",
+      "no collateral",
+      "MFI"
+    ],
     "imageUrl": null
   },
   {
@@ -826,13 +2201,46 @@
     "launchYear": 2024,
     "status": "active",
     "featured": true,
-    "eligibility": { "minAge": 18, "maxAge": 100, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "subsidy", "amount": 78000, "description": "1kW: ₹30K subsidy, 2kW: ₹60K, 3kW: ₹78K. Free installation for BPL. Save ₹15-20K/year on electricity", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "Electricity bill (latest)", "Bank Account", "Property ownership proof", "Roof photo"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "subsidy",
+        "amount": 78000,
+        "description": "1kW: ₹30K subsidy, 2kW: ₹60K, 3kW: ₹78K. Free installation for BPL. Save ₹15-20K/year on electricity",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Electricity bill (latest)",
+      "Bank Account",
+      "Property ownership proof",
+      "Roof photo"
+    ],
     "applicationProcess": "Apply at pmsuryaghar.gov.in. Select DISCOM, fill form, get subsidy directly in bank. Also available at nearest DISCOM office.",
     "applicationUrl": "https://pmsuryaghar.gov.in",
     "helplineNumber": "1800-180-3333",
-    "tags": ["solar", "rooftop", "electricity", "renewable energy", "BPL", "free", "subsidy", "green"],
+    "tags": [
+      "solar",
+      "rooftop",
+      "electricity",
+      "renewable energy",
+      "BPL",
+      "free",
+      "subsidy",
+      "green"
+    ],
     "imageUrl": null
   },
   {
@@ -845,13 +2253,42 @@
     "launchYear": 2019,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 100, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "subsidy", "amount": null, "description": "Free functional tap water connection at home for rural households, safe drinking water guaranteed", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "Village resident proof"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "subsidy",
+        "amount": null,
+        "description": "Free functional tap water connection at home for rural households, safe drinking water guaranteed",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Village resident proof"
+    ],
     "applicationProcess": "Apply at Gram Panchayat or contact local JJM coordinator. Village Water & Sanitation Committee (VWSC) handles implementation.",
     "applicationUrl": "https://ejalshakti.gov.in/jjmreport/JJMIndia.aspx",
     "helplineNumber": "1916",
-    "tags": ["water", "tap connection", "rural", "drinking water", "JJM", "sanitation", "har ghar jal"],
+    "tags": [
+      "water",
+      "tap connection",
+      "rural",
+      "drinking water",
+      "JJM",
+      "sanitation",
+      "har ghar jal"
+    ],
     "imageUrl": null
   },
   {
@@ -864,13 +2301,44 @@
     "launchYear": 2014,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 100, "gender": "all", "incomeLimit": 120000, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "financial", "amount": 12000, "description": "₹12,000 incentive for toilet construction, transferred to bank after completion and geo-tagged photo upload", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "BPL Card", "Bank Account", "Land proof (no pucca toilet)"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": 120000,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "financial",
+        "amount": 12000,
+        "description": "₹12,000 incentive for toilet construction, transferred to bank after completion and geo-tagged photo upload",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "BPL Card",
+      "Bank Account",
+      "Land proof (no pucca toilet)"
+    ],
     "applicationProcess": "Apply at Gram Panchayat or Block Development Officer. Construction inspected, incentive paid via DBT after verification.",
     "applicationUrl": "https://sbm.gov.in/sbmReport/home.aspx",
     "helplineNumber": "1969",
-    "tags": ["toilet", "sanitation", "ODF", "Swachh Bharat", "BPL", "rural", "hygiene"],
+    "tags": [
+      "toilet",
+      "sanitation",
+      "ODF",
+      "Swachh Bharat",
+      "BPL",
+      "rural",
+      "hygiene"
+    ],
     "imageUrl": null
   },
   {
@@ -883,13 +2351,44 @@
     "launchYear": 2021,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 100, "gender": "female", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "subsidy", "amount": 3200, "description": "Free LPG connection + free first refill + free stove. Migrants need only self-declared address proof", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "Bank Account", "Self-declaration of address (migrants)", "BPL card (if available)"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 100,
+      "gender": "female",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "subsidy",
+        "amount": 3200,
+        "description": "Free LPG connection + free first refill + free stove. Migrants need only self-declared address proof",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account",
+      "Self-declaration of address (migrants)",
+      "BPL card (if available)"
+    ],
     "applicationProcess": "Apply at nearest LPG distributor or online at pmuy.gov.in. Migrants can simply self-declare their address — no rent agreement needed.",
     "applicationUrl": "https://pmuy.gov.in/ujjwala2.html",
     "helplineNumber": "1800-233-3555",
-    "tags": ["LPG", "cooking gas", "women", "migrant", "free refill", "Ujjwala", "fuel"],
+    "tags": [
+      "LPG",
+      "cooking gas",
+      "women",
+      "migrant",
+      "free refill",
+      "Ujjwala",
+      "fuel"
+    ],
     "imageUrl": null
   },
   {
@@ -902,13 +2401,47 @@
     "launchYear": 1997,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 65, "gender": "all", "incomeLimit": null, "caste": ["sc"], "states": ["all"], "occupation": ["employed", "self-employed"] },
-    "benefits": [{ "type": "loan", "amount": 1500000, "description": "Loans up to ₹15L for sanitation workers at 6% interest for self-employment / business upgradation", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "SC/Safai Karamchari certificate", "Bank Account", "Business plan"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 65,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "sc"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "employed",
+        "self-employed"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "loan",
+        "amount": 1500000,
+        "description": "Loans up to ₹15L for sanitation workers at 6% interest for self-employment / business upgradation",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "SC/Safai Karamchari certificate",
+      "Bank Account",
+      "Business plan"
+    ],
     "applicationProcess": "Apply at nearest State Channelizing Agency (SCA) or directly at NSKFDC office. Online: nskfdc.nic.in.",
     "applicationUrl": "https://nskfdc.nic.in",
     "helplineNumber": "011-23386458",
-    "tags": ["safai karamchari", "sanitation worker", "SC", "loan", "self-employment", "NSKFDC"],
+    "tags": [
+      "safai karamchari",
+      "sanitation worker",
+      "SC",
+      "loan",
+      "self-employment",
+      "NSKFDC"
+    ],
     "imageUrl": null
   },
   {
@@ -921,13 +2454,48 @@
     "launchYear": 2019,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 100, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["farmer"] },
-    "benefits": [{ "type": "subsidy", "amount": null, "description": "90% subsidy on solar pump (2-10 HP). Farmer pays only 10%. Saves ₹50K-1L/year on diesel/electricity", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "Land Records", "Bank Account", "Electricity bill / diesel bill", "Farmer registration"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "farmer"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "subsidy",
+        "amount": null,
+        "description": "90% subsidy on solar pump (2-10 HP). Farmer pays only 10%. Saves ₹50K-1L/year on diesel/electricity",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Land Records",
+      "Bank Account",
+      "Electricity bill / diesel bill",
+      "Farmer registration"
+    ],
     "applicationProcess": "Apply at state DISCOM or state agriculture department portal. Each state has separate application link. Also at pmkusum.mnre.gov.in.",
     "applicationUrl": "https://pmkusum.mnre.gov.in",
     "helplineNumber": "1800-180-3333",
-    "tags": ["solar pump", "farmer", "irrigation", "agriculture", "renewable energy", "KUSUM", "subsidy"],
+    "tags": [
+      "solar pump",
+      "farmer",
+      "irrigation",
+      "agriculture",
+      "renewable energy",
+      "KUSUM",
+      "subsidy"
+    ],
     "imageUrl": null
   },
   {
@@ -940,13 +2508,41 @@
     "launchYear": 2021,
     "status": "active",
     "featured": true,
-    "eligibility": { "minAge": 0, "maxAge": 100, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "healthcare", "amount": null, "description": "Free ABHA health ID card + digital health records + linked prescriptions + telemedicine access", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card (for Aadhaar-based) OR Mobile number (for mobile-based)"],
+    "eligibility": {
+      "minAge": 0,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "healthcare",
+        "amount": null,
+        "description": "Free ABHA health ID card + digital health records + linked prescriptions + telemedicine access",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card (for Aadhaar-based) OR Mobile number (for mobile-based)"
+    ],
     "applicationProcess": "Create ABHA ID instantly online at healthid.ndhm.gov.in or via Aadhaar OTP. Takes less than 2 minutes. App also available.",
     "applicationUrl": "https://abha.abdm.gov.in/abha/v3/register",
     "helplineNumber": "14477",
-    "tags": ["ABHA", "health ID", "digital health", "medical record", "Ayushman", "telemedicine", "free"],
+    "tags": [
+      "ABHA",
+      "health ID",
+      "digital health",
+      "medical record",
+      "Ayushman",
+      "telemedicine",
+      "free"
+    ],
     "imageUrl": null
   },
   {
@@ -959,13 +2555,40 @@
     "launchYear": 2021,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 0, "maxAge": 100, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "financial", "amount": null, "description": "Targeted digital vouchers for health, education, nutrition — redeemable only for specific purpose, no cash misuse", "frequency": "one-time" }],
-    "documents": ["Aadhaar-linked Mobile Number"],
+    "eligibility": {
+      "minAge": 0,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "financial",
+        "amount": null,
+        "description": "Targeted digital vouchers for health, education, nutrition — redeemable only for specific purpose, no cash misuse",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar-linked Mobile Number"
+    ],
     "applicationProcess": "e-RUPI vouchers are issued by government/corporate sponsors to beneficiaries. No separate application — you receive it via SMS/QR from the scheme department.",
     "applicationUrl": "https://www.npci.org.in/what-we-do/erupi/product-overview",
     "helplineNumber": "1800-120-1740",
-    "tags": ["digital payment", "e-RUPI", "cashless", "targeted benefit", "DBT", "QR code"],
+    "tags": [
+      "digital payment",
+      "e-RUPI",
+      "cashless",
+      "targeted benefit",
+      "DBT",
+      "QR code"
+    ],
     "imageUrl": null
   },
   {
@@ -978,13 +2601,48 @@
     "launchYear": 2013,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 55, "gender": "all", "incomeLimit": 120000, "caste": ["all"], "states": ["all"], "occupation": ["unemployed", "self-employed"] },
-    "benefits": [{ "type": "financial", "amount": 200000, "description": "Free skill training, ₹2L individual micro-enterprise loan at 7%, SHG loans up to ₹10L at 7%", "frequency": "one-time" }],
-    "documents": ["Aadhaar Card", "BPL/EWS certificate", "Domicile proof", "Bank Account"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 55,
+      "gender": "all",
+      "incomeLimit": 120000,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "unemployed",
+        "self-employed"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "financial",
+        "amount": 200000,
+        "description": "Free skill training, ₹2L individual micro-enterprise loan at 7%, SHG loans up to ₹10L at 7%",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "BPL/EWS certificate",
+      "Domicile proof",
+      "Bank Account"
+    ],
     "applicationProcess": "Contact nearest Urban Local Body (ULB) / Municipal Corporation office or city-level DAY-NULM project office.",
     "applicationUrl": "https://nulm.gov.in",
     "helplineNumber": "1800-11-6163",
-    "tags": ["urban poor", "skill training", "micro enterprise", "SHG", "NULM", "self-employment", "loan"],
+    "tags": [
+      "urban poor",
+      "skill training",
+      "micro enterprise",
+      "SHG",
+      "NULM",
+      "self-employment",
+      "loan"
+    ],
     "imageUrl": null
   },
   {
@@ -997,13 +2655,46 @@
     "launchYear": 2018,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 100, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"], "occupation": ["farmer"] },
-    "benefits": [{ "type": "financial", "amount": null, "description": "Guaranteed MSP for oilseeds, pulses and copra. Govt buys produce at declared MSP rates if market price falls below", "frequency": "one-time" }],
-    "documents": ["Farmer registration / PM Kisan ID", "Land Records", "Bank Account linked to Aadhaar"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "farmer"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "financial",
+        "amount": null,
+        "description": "Guaranteed MSP for oilseeds, pulses and copra. Govt buys produce at declared MSP rates if market price falls below",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Farmer registration / PM Kisan ID",
+      "Land Records",
+      "Bank Account linked to Aadhaar"
+    ],
     "applicationProcess": "Register on e-NAM portal (enam.gov.in) or contact State Agriculture Marketing Board (SAMB) for MSP procurement.",
     "applicationUrl": "https://enam.gov.in/web/",
     "helplineNumber": "1800-270-0224",
-    "tags": ["MSP", "minimum support price", "crop", "oilseed", "pulse", "farmer income", "procurement"],
+    "tags": [
+      "MSP",
+      "minimum support price",
+      "crop",
+      "oilseed",
+      "pulse",
+      "farmer income",
+      "procurement"
+    ],
     "imageUrl": null
   },
   {
@@ -1016,13 +2707,41 @@
     "launchYear": 2020,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 0, "maxAge": 100, "gender": "all", "incomeLimit": null, "caste": ["all"], "states": ["all"] },
-    "benefits": [{ "type": "financial", "amount": null, "description": "Affordable public WiFi access (₹1-5/day). PDO owners earn passive income by providing WiFi connectivity", "frequency": "one-time" }],
-    "documents": ["Any ID for users. PDO owners need: Aadhaar + GST + internet connection"],
+    "eligibility": {
+      "minAge": 0,
+      "maxAge": 100,
+      "gender": "all",
+      "incomeLimit": null,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "financial",
+        "amount": null,
+        "description": "Affordable public WiFi access (₹1-5/day). PDO owners earn passive income by providing WiFi connectivity",
+        "frequency": "one-time"
+      }
+    ],
+    "documents": [
+      "Any ID for users. PDO owners need: Aadhaar + GST + internet connection"
+    ],
     "applicationProcess": "Find nearest PM-WANI hotspot at dot.gov.in/pmwani or register as PDO (Public Data Office) to earn income. Businesses can register free.",
     "applicationUrl": "https://dot.gov.in/pmwani",
     "helplineNumber": "1500",
-    "tags": ["WiFi", "broadband", "internet", "rural connectivity", "digital india", "PDO", "cheap internet"],
+    "tags": [
+      "WiFi",
+      "broadband",
+      "internet",
+      "rural connectivity",
+      "digital india",
+      "PDO",
+      "cheap internet"
+    ],
     "imageUrl": null
   },
   {
@@ -1035,13 +2754,48 @@
     "launchYear": 2019,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 40, "gender": "all", "incomeLimit": 150000, "caste": ["all"], "states": ["all"], "occupation": ["self-employed", "entrepreneur"] },
-    "benefits": [{ "type": "pension", "amount": 3000, "description": "₹3,000/month pension post age 60. Govt matches monthly contribution of ₹55-200 based on age of entry", "frequency": "monthly" }],
-    "documents": ["Aadhaar Card", "GSTIN or Shop/Business registration", "Bank Account", "Mobile Number"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 40,
+      "gender": "all",
+      "incomeLimit": 150000,
+      "caste": [
+        "all"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "self-employed",
+        "entrepreneur"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "pension",
+        "amount": 3000,
+        "description": "₹3,000/month pension post age 60. Govt matches monthly contribution of ₹55-200 based on age of entry",
+        "frequency": "monthly"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "GSTIN or Shop/Business registration",
+      "Bank Account",
+      "Mobile Number"
+    ],
     "applicationProcess": "Enroll at nearest CSC (Common Service Centre) or online at maandhan.in. Contribution auto-debited from bank account monthly.",
     "applicationUrl": "https://maandhan.in",
     "helplineNumber": "1800-267-6888",
-    "tags": ["trader", "shopkeeper", "pension", "self-employed", "maandhan", "retirement", "small business"],
+    "tags": [
+      "trader",
+      "shopkeeper",
+      "pension",
+      "self-employed",
+      "maandhan",
+      "retirement",
+      "small business"
+    ],
     "imageUrl": null
   },
   {
@@ -1054,13 +2808,1286 @@
     "launchYear": 2001,
     "status": "active",
     "featured": false,
-    "eligibility": { "minAge": 18, "maxAge": 30, "gender": "all", "incomeLimit": 600000, "caste": ["sc", "st", "obc"], "states": ["all"], "occupation": ["student", "unemployed"] },
-    "benefits": [{ "type": "education", "amount": 36000, "description": "Free coaching for UPSC/SSC/Banking etc + ₹3,000/month stipend during training + study material", "frequency": "monthly" }],
-    "documents": ["Aadhaar Card", "Caste Certificate", "Income Certificate", "Graduation Certificate", "Bank Account"],
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 30,
+      "gender": "all",
+      "incomeLimit": 600000,
+      "caste": [
+        "sc",
+        "st",
+        "obc"
+      ],
+      "states": [
+        "all"
+      ],
+      "occupation": [
+        "student",
+        "unemployed"
+      ]
+    },
+    "benefits": [
+      {
+        "type": "education",
+        "amount": 36000,
+        "description": "Free coaching for UPSC/SSC/Banking etc + ₹3,000/month stipend during training + study material",
+        "frequency": "monthly"
+      }
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Caste Certificate",
+      "Income Certificate",
+      "Graduation Certificate",
+      "Bank Account"
+    ],
     "applicationProcess": "Apply at socialjustice.gov.in during announcement period. Coaching at empanelled institutes in 70+ cities. DBT stipend to bank.",
     "applicationUrl": "https://socialjustice.gov.in/schemes/free-coaching-scheme",
     "helplineNumber": "011-23381892",
-    "tags": ["coaching", "UPSC", "SSC", "banking", "railway", "SC", "ST", "OBC", "free", "competitive exam"],
+    "tags": [
+      "coaching",
+      "UPSC",
+      "SSC",
+      "banking",
+      "railway",
+      "SC",
+      "ST",
+      "OBC",
+      "free",
+      "competitive exam"
+    ],
     "imageUrl": null
+  },
+  {
+    "schemeId": "S1057",
+    "title": "Welfare Scheme for Health Phase 1",
+    "description": "A comprehensive government initiative aimed at improving health across Maharashtra.",
+    "department": "Department of Health",
+    "state": "Maharashtra",
+    "category": "health",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1058",
+    "title": "Welfare Scheme for Housing Phase 2",
+    "description": "A comprehensive government initiative aimed at improving housing across Uttar Pradesh.",
+    "department": "Department of Housing",
+    "state": "Uttar Pradesh",
+    "category": "housing",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1059",
+    "title": "Welfare Scheme for Employment Phase 3",
+    "description": "A comprehensive government initiative aimed at improving employment across Karnataka.",
+    "department": "Department of Employment",
+    "state": "Karnataka",
+    "category": "employment",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1060",
+    "title": "Welfare Scheme for Agriculture Phase 4",
+    "description": "A comprehensive government initiative aimed at improving agriculture across Tamil Nadu.",
+    "department": "Department of Agriculture",
+    "state": "Tamil Nadu",
+    "category": "agriculture",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1061",
+    "title": "Welfare Scheme for Women-empowerment Phase 5",
+    "description": "A comprehensive government initiative aimed at improving women-empowerment across Delhi.",
+    "department": "Department of Women-empowerment",
+    "state": "Delhi",
+    "category": "women-empowerment",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": true
+  },
+  {
+    "schemeId": "S1062",
+    "title": "Welfare Scheme for Skill-development Phase 6",
+    "description": "A comprehensive government initiative aimed at improving skill-development across All India.",
+    "department": "Department of Skill-development",
+    "state": "All India",
+    "category": "skill-development",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1063",
+    "title": "Welfare Scheme for Education Phase 7",
+    "description": "A comprehensive government initiative aimed at improving education across Maharashtra.",
+    "department": "Department of Education",
+    "state": "Maharashtra",
+    "category": "education",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1064",
+    "title": "Welfare Scheme for Health Phase 8",
+    "description": "A comprehensive government initiative aimed at improving health across Uttar Pradesh.",
+    "department": "Department of Health",
+    "state": "Uttar Pradesh",
+    "category": "health",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1065",
+    "title": "Welfare Scheme for Housing Phase 9",
+    "description": "A comprehensive government initiative aimed at improving housing across Karnataka.",
+    "department": "Department of Housing",
+    "state": "Karnataka",
+    "category": "housing",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1066",
+    "title": "Welfare Scheme for Employment Phase 10",
+    "description": "A comprehensive government initiative aimed at improving employment across Tamil Nadu.",
+    "department": "Department of Employment",
+    "state": "Tamil Nadu",
+    "category": "employment",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": true
+  },
+  {
+    "schemeId": "S1067",
+    "title": "Welfare Scheme for Agriculture Phase 11",
+    "description": "A comprehensive government initiative aimed at improving agriculture across Delhi.",
+    "department": "Department of Agriculture",
+    "state": "Delhi",
+    "category": "agriculture",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1068",
+    "title": "Welfare Scheme for Women-empowerment Phase 12",
+    "description": "A comprehensive government initiative aimed at improving women-empowerment across All India.",
+    "department": "Department of Women-empowerment",
+    "state": "All India",
+    "category": "women-empowerment",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1069",
+    "title": "Welfare Scheme for Skill-development Phase 13",
+    "description": "A comprehensive government initiative aimed at improving skill-development across Maharashtra.",
+    "department": "Department of Skill-development",
+    "state": "Maharashtra",
+    "category": "skill-development",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1070",
+    "title": "Welfare Scheme for Education Phase 14",
+    "description": "A comprehensive government initiative aimed at improving education across Uttar Pradesh.",
+    "department": "Department of Education",
+    "state": "Uttar Pradesh",
+    "category": "education",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1071",
+    "title": "Welfare Scheme for Health Phase 15",
+    "description": "A comprehensive government initiative aimed at improving health across Karnataka.",
+    "department": "Department of Health",
+    "state": "Karnataka",
+    "category": "health",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": true
+  },
+  {
+    "schemeId": "S1072",
+    "title": "Welfare Scheme for Housing Phase 16",
+    "description": "A comprehensive government initiative aimed at improving housing across Tamil Nadu.",
+    "department": "Department of Housing",
+    "state": "Tamil Nadu",
+    "category": "housing",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1073",
+    "title": "Welfare Scheme for Employment Phase 17",
+    "description": "A comprehensive government initiative aimed at improving employment across Delhi.",
+    "department": "Department of Employment",
+    "state": "Delhi",
+    "category": "employment",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1074",
+    "title": "Welfare Scheme for Agriculture Phase 18",
+    "description": "A comprehensive government initiative aimed at improving agriculture across All India.",
+    "department": "Department of Agriculture",
+    "state": "All India",
+    "category": "agriculture",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1075",
+    "title": "Welfare Scheme for Women-empowerment Phase 19",
+    "description": "A comprehensive government initiative aimed at improving women-empowerment across Maharashtra.",
+    "department": "Department of Women-empowerment",
+    "state": "Maharashtra",
+    "category": "women-empowerment",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1076",
+    "title": "Welfare Scheme for Skill-development Phase 20",
+    "description": "A comprehensive government initiative aimed at improving skill-development across Uttar Pradesh.",
+    "department": "Department of Skill-development",
+    "state": "Uttar Pradesh",
+    "category": "skill-development",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": true
+  },
+  {
+    "schemeId": "S1077",
+    "title": "Welfare Scheme for Education Phase 21",
+    "description": "A comprehensive government initiative aimed at improving education across Karnataka.",
+    "department": "Department of Education",
+    "state": "Karnataka",
+    "category": "education",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1078",
+    "title": "Welfare Scheme for Health Phase 22",
+    "description": "A comprehensive government initiative aimed at improving health across Tamil Nadu.",
+    "department": "Department of Health",
+    "state": "Tamil Nadu",
+    "category": "health",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1079",
+    "title": "Welfare Scheme for Housing Phase 23",
+    "description": "A comprehensive government initiative aimed at improving housing across Delhi.",
+    "department": "Department of Housing",
+    "state": "Delhi",
+    "category": "housing",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1080",
+    "title": "Welfare Scheme for Employment Phase 24",
+    "description": "A comprehensive government initiative aimed at improving employment across All India.",
+    "department": "Department of Employment",
+    "state": "All India",
+    "category": "employment",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1081",
+    "title": "Welfare Scheme for Agriculture Phase 25",
+    "description": "A comprehensive government initiative aimed at improving agriculture across Maharashtra.",
+    "department": "Department of Agriculture",
+    "state": "Maharashtra",
+    "category": "agriculture",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": true
+  },
+  {
+    "schemeId": "S1082",
+    "title": "Welfare Scheme for Women-empowerment Phase 26",
+    "description": "A comprehensive government initiative aimed at improving women-empowerment across Uttar Pradesh.",
+    "department": "Department of Women-empowerment",
+    "state": "Uttar Pradesh",
+    "category": "women-empowerment",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1083",
+    "title": "Welfare Scheme for Skill-development Phase 27",
+    "description": "A comprehensive government initiative aimed at improving skill-development across Karnataka.",
+    "department": "Department of Skill-development",
+    "state": "Karnataka",
+    "category": "skill-development",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1084",
+    "title": "Welfare Scheme for Education Phase 28",
+    "description": "A comprehensive government initiative aimed at improving education across Tamil Nadu.",
+    "department": "Department of Education",
+    "state": "Tamil Nadu",
+    "category": "education",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1085",
+    "title": "Welfare Scheme for Health Phase 29",
+    "description": "A comprehensive government initiative aimed at improving health across Delhi.",
+    "department": "Department of Health",
+    "state": "Delhi",
+    "category": "health",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1086",
+    "title": "Welfare Scheme for Housing Phase 30",
+    "description": "A comprehensive government initiative aimed at improving housing across All India.",
+    "department": "Department of Housing",
+    "state": "All India",
+    "category": "housing",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": true
+  },
+  {
+    "schemeId": "S1087",
+    "title": "Welfare Scheme for Employment Phase 31",
+    "description": "A comprehensive government initiative aimed at improving employment across Maharashtra.",
+    "department": "Department of Employment",
+    "state": "Maharashtra",
+    "category": "employment",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1088",
+    "title": "Welfare Scheme for Agriculture Phase 32",
+    "description": "A comprehensive government initiative aimed at improving agriculture across Uttar Pradesh.",
+    "department": "Department of Agriculture",
+    "state": "Uttar Pradesh",
+    "category": "agriculture",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1089",
+    "title": "Welfare Scheme for Women-empowerment Phase 33",
+    "description": "A comprehensive government initiative aimed at improving women-empowerment across Karnataka.",
+    "department": "Department of Women-empowerment",
+    "state": "Karnataka",
+    "category": "women-empowerment",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1090",
+    "title": "Welfare Scheme for Skill-development Phase 34",
+    "description": "A comprehensive government initiative aimed at improving skill-development across Tamil Nadu.",
+    "department": "Department of Skill-development",
+    "state": "Tamil Nadu",
+    "category": "skill-development",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1091",
+    "title": "Welfare Scheme for Education Phase 35",
+    "description": "A comprehensive government initiative aimed at improving education across Delhi.",
+    "department": "Department of Education",
+    "state": "Delhi",
+    "category": "education",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": true
+  },
+  {
+    "schemeId": "S1092",
+    "title": "Welfare Scheme for Health Phase 36",
+    "description": "A comprehensive government initiative aimed at improving health across All India.",
+    "department": "Department of Health",
+    "state": "All India",
+    "category": "health",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1093",
+    "title": "Welfare Scheme for Housing Phase 37",
+    "description": "A comprehensive government initiative aimed at improving housing across Maharashtra.",
+    "department": "Department of Housing",
+    "state": "Maharashtra",
+    "category": "housing",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1094",
+    "title": "Welfare Scheme for Employment Phase 38",
+    "description": "A comprehensive government initiative aimed at improving employment across Uttar Pradesh.",
+    "department": "Department of Employment",
+    "state": "Uttar Pradesh",
+    "category": "employment",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1095",
+    "title": "Welfare Scheme for Agriculture Phase 39",
+    "description": "A comprehensive government initiative aimed at improving agriculture across Karnataka.",
+    "department": "Department of Agriculture",
+    "state": "Karnataka",
+    "category": "agriculture",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1096",
+    "title": "Welfare Scheme for Women-empowerment Phase 40",
+    "description": "A comprehensive government initiative aimed at improving women-empowerment across Tamil Nadu.",
+    "department": "Department of Women-empowerment",
+    "state": "Tamil Nadu",
+    "category": "women-empowerment",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": true
+  },
+  {
+    "schemeId": "S1097",
+    "title": "Welfare Scheme for Skill-development Phase 41",
+    "description": "A comprehensive government initiative aimed at improving skill-development across Delhi.",
+    "department": "Department of Skill-development",
+    "state": "Delhi",
+    "category": "skill-development",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1098",
+    "title": "Welfare Scheme for Education Phase 42",
+    "description": "A comprehensive government initiative aimed at improving education across All India.",
+    "department": "Department of Education",
+    "state": "All India",
+    "category": "education",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1099",
+    "title": "Welfare Scheme for Health Phase 43",
+    "description": "A comprehensive government initiative aimed at improving health across Maharashtra.",
+    "department": "Department of Health",
+    "state": "Maharashtra",
+    "category": "health",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
+  },
+  {
+    "schemeId": "S1100",
+    "title": "Welfare Scheme for Housing Phase 44",
+    "description": "A comprehensive government initiative aimed at improving housing across Uttar Pradesh.",
+    "department": "Department of Housing",
+    "state": "Uttar Pradesh",
+    "category": "housing",
+    "benefits": [
+      "Financial assistance",
+      "Subsidized services",
+      "Skill training"
+    ],
+    "eligibility": {
+      "ageRange": {
+        "min": 18,
+        "max": 60
+      },
+      "incomeLimit": 500000,
+      "gender": "all",
+      "occupation": [],
+      "caste": [],
+      "specialConditions": []
+    },
+    "applicationMode": "online",
+    "portalUrl": "https://india.gov.in",
+    "status": "active",
+    "featured": false
   }
 ]
