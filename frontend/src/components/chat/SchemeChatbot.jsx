@@ -134,7 +134,10 @@ const SchemeChatbot = () => {
           {/* Sidebar (History) */}
           <div className={`chatbot-sidebar ${isSidebarOpen ? 'open' : ''}`}>
             <div className="sidebar-header">
-              <h3>{language === 'hi' ? 'चैट हिस्ट्री' : 'Chat History'}</h3>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <h3>{language === 'hi' ? 'चैट हिस्ट्री' : 'Chat History'}</h3>
+                <button className="close-btn" style={{ fontSize: '18px' }} onClick={() => setIsSidebarOpen(false)} title="Close">×</button>
+              </div>
               <button className="new-chat-btn" onClick={() => { startNewChat(); setIsSidebarOpen(false); }}>
                 {language === 'hi' ? '+ नया' : '+ New'}
               </button>
@@ -171,7 +174,7 @@ const SchemeChatbot = () => {
           </div>
 
           {/* Main Chat Area */}
-          <div className="chatbot-main">
+          <div className="chatbot-main" onClick={() => isSidebarOpen && setIsSidebarOpen(false)}>
             <div className="chat-header">
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <button 
