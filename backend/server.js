@@ -49,7 +49,9 @@ app.use(cors({
     if (allowedOrigins.indexOf(origin) !== -1) {
       callback(null, true);
     } else {
-      callback(new Error('Not allowed by CORS'));
+      // Don't throw an error (which causes 500), just return false
+      // to omit the CORS headers. This allows static assets to load.
+      callback(null, false);
     }
   },
   credentials: true,
