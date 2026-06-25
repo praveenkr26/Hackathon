@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="./frontend/public/favicon.svg" alt="YojanaSetu Logo" width="100" />
+ <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/8540b2b0-daef-4f3a-8fb0-371f32546fcf" />
+
   
   # YojanaSetu (योजनासेतु)
   **Your AI-Powered Bridge to Indian Government Welfare Schemes**
