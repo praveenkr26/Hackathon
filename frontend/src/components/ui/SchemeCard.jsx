@@ -19,6 +19,21 @@ const CATEGORY_CONFIG = {
   'tribal-welfare': { icon: '🌿', gradient: 'var(--gradient-green)' }
 };
 
+const CATEGORY_IMAGES = {
+  education: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=600&auto=format&fit=crop',
+  health: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=600&auto=format&fit=crop',
+  agriculture: 'https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?q=80&w=600&auto=format&fit=crop',
+  housing: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=600&auto=format&fit=crop',
+  employment: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600&auto=format&fit=crop',
+  'social-welfare': 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600&auto=format&fit=crop',
+  'women-empowerment': 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop',
+  'skill-development': 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=600&auto=format&fit=crop',
+  'financial-inclusion': 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=600&auto=format&fit=crop',
+  'senior-citizen': 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=600&auto=format&fit=crop',
+  disability: 'https://images.unsplash.com/photo-1531206715517-5c0ba140e2b8?q=80&w=600&auto=format&fit=crop',
+  'tribal-welfare': 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600&auto=format&fit=crop'
+};
+
 const BENEFIT_TYPE_LABELS = {
   financial: '₹ Financial',
   scholarship: '🎓 Scholarship',
@@ -51,7 +66,12 @@ const SchemeCard = ({ scheme, index = 0, showMatchScore, matchScore }) => {
       aria-label={`Scheme: ${scheme.name}`}
     >
       {/* Header */}
-      <div className="scheme-card-header" style={{ background: catConfig.gradient }}>
+      <div 
+        className="scheme-card-header" 
+        style={{ 
+          background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(${CATEGORY_IMAGES[scheme.category] || CATEGORY_IMAGES['social-welfare']}) center/cover no-repeat` 
+        }}
+      >
         <div className="scheme-card-icon">{catConfig.icon}</div>
         <div className="scheme-card-header-right">
           {scheme.featured && (
