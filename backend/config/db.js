@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const logger = require('../utils/logger');
 const Scheme = require('../models/Scheme');
-const seedData = require('../seeds/schemes.json');
+const seedData = require('../seeds/real_schemes_atlas.json');
 
 /**
  * Connect to MongoDB and optionally seed the database
@@ -41,16 +41,26 @@ const connectDB = async () => {
 };
 
 /**
- * Seed database with sample welfare schemes on first run
+ * Seed database with sample data
  */
 const seedDatabase = async () => {
   try {
     logger.info('🌱 Clearing old data and seeding database with 100 rich schemes...');
     await Scheme.deleteMany({}); // Clear existing to prevent duplicates
-    await Scheme.insertMany(seedData);
-    logger.info(`✅ Seeded ${seedData.length} welfare schemes successfully!`);
+    
+    // Inject unique slugs manually since insertMany bypasses pre('save') hooks
+    const dataWithSlugs = seedData.map((s, index) => {
+      const copy = { ...s };
+      delete copy._id; // Let mongoose generate new object ids
+      copy.slug = (copy.name || 'scheme').toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-') + '-' + Date.now() + '-' + index;
+      return copy;
+    });
+
+    await Scheme.insertMany(dataWithSlugs);
+    logger.info(`✅ Seeded ${dataWithSlugs.length} welfare schemes successfully!`);
   } catch (error) {
     logger.error('Seeding failed:', error.message);
+    throw error; // Throw to route handler so we can see it
   }
 };
 
