@@ -136,9 +136,9 @@ const SchemeCard = ({ scheme, index = 0, showMatchScore, matchScore }) => {
       {/* Footer */}
       <div className="scheme-card-footer">
         <Link
-          to={`/schemes/${scheme._id}`}
+          to={`/schemes/${scheme.id || scheme._id}`}
           className="btn btn-primary btn-sm scheme-btn-primary"
-          id={`scheme-detail-${scheme._id}`}
+          id={`scheme-detail-${scheme.id || scheme._id}`}
         >
           {t(language, 'card.viewDetails')} →
         </Link>
