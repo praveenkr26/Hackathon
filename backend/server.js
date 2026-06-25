@@ -43,17 +43,7 @@ const allowedOrigins = [
 ];
 
 app.use(cors({
-  origin: (origin, callback) => {
-    // Allow requests with no origin (mobile apps, Postman, etc.)
-    if (!origin) return callback(null, true);
-    if (allowedOrigins.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      // Don't throw an error (which causes 500), just return false
-      // to omit the CORS headers. This allows static assets to load.
-      callback(null, false);
-    }
-  },
+  origin: true, // Allow all origins for the hackathon
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
@@ -94,36 +84,19 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Serve static assets in production
-if (process.env.NODE_ENV === 'production') {
-  const path = require('path');
-  
-  // Serve static folder
-  app.use(express.static(path.join(__dirname, '../frontend/dist')));
-
-  // Point to index.html for all other routes
-  app.get('*', (req, res, next) => {
-    // Skip if it starts with /api (so it goes to 404 handler)
-    if (req.path.startsWith('/api')) {
-      return next();
+// ─── Root Route ──────────────────────────────────────
+app.get('/', (req, res) => {
+  res.json({
+    message: '🎉 Welcome to YojanaSetu API (Backend Only)',
+    version: '1.0.0',
+    docs: `/api/health`,
+    endpoints: {
+      schemes: `/api/schemes`,
+      ai: `/api/ai`,
+      health: `/api/health`
     }
-    res.sendFile(path.resolve(__dirname, '../frontend/dist/index.html'));
   });
-} else {
-  // ─── Root Route (Development Fallback) ──────────────────────────────────────
-  app.get('/', (req, res) => {
-    res.json({
-      message: '🎉 Welcome to YojanaSetu API!',
-      version: '1.0.0',
-      docs: `http://localhost:${PORT}/api/health`,
-      endpoints: {
-        schemes: `/api/schemes`,
-        ai: `/api/ai`,
-        health: `/api/health`
-      }
-    });
-  });
-}
+});
 
 // ─── 404 Handler ────────────────────────────────────────────────────────────
 app.use((req, res) => {
