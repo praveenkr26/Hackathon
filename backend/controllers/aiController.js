@@ -439,11 +439,39 @@ const getChatSession = async (req, res) => {
   }
 };
 
+/**
+ * DELETE /api/ai/chat/:sessionId
+ * Delete a specific chat session
+ */
+const deleteChatSession = async (req, res) => {
+  try {
+    await ChatSession.findByIdAndDelete(req.params.sessionId);
+    res.json({ success: true, message: 'Chat session deleted' });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+};
+
+/**
+ * DELETE /api/ai/chat/history/all
+ * Clear all chat history
+ */
+const clearChatHistory = async (req, res) => {
+  try {
+    await ChatSession.deleteMany({});
+    res.json({ success: true, message: 'All chat history cleared' });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+};
+
 module.exports = {
   classifyIntent,
   extractProfile,
   processDocument,
   chatWithGemini,
   getChatHistory,
-  getChatSession
+  getChatSession,
+  deleteChatSession,
+  clearChatHistory
 };

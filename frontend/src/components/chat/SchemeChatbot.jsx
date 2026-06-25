@@ -7,6 +7,7 @@ import './SchemeChatbot.css';
 
 const SchemeChatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [history, setHistory] = useState([]);
   const [activeSessionId, setActiveSessionId] = useState(null);
   const [messages, setMessages] = useState([]);
@@ -90,6 +91,30 @@ const SchemeChatbot = () => {
     }
   };
 
+  const handleDeleteSession = async (sessionId, e) => {
+    e.stopPropagation();
+    if (!window.confirm(language === 'hi' ? 'क्या आप इस चैट को डिलीट करना चाहते हैं?' : 'Delete this chat?')) return;
+    try {
+      await aiAPI.deleteChatSession(sessionId);
+      if (activeSessionId === sessionId) startNewChat();
+      fetchHistory();
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const handleClearHistory = async () => {
+    if (!window.confirm(language === 'hi' ? 'क्या आप पूरी चैट हिस्ट्री डिलीट करना चाहते हैं?' : 'Delete ALL chat history?')) return;
+    try {
+      await aiAPI.clearChatHistory();
+      startNewChat();
+      fetchHistory();
+      setIsSidebarOpen(false);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   return (
     <div className="scheme-chatbot-container">
       {/* Floating Action Button */}
@@ -107,10 +132,10 @@ const SchemeChatbot = () => {
       {isOpen && (
         <div className="chatbot-window">
           {/* Sidebar (History) */}
-          <div className="chatbot-sidebar">
+          <div className={`chatbot-sidebar ${isSidebarOpen ? 'open' : ''}`}>
             <div className="sidebar-header">
               <h3>{language === 'hi' ? 'चैट हिस्ट्री' : 'Chat History'}</h3>
-              <button className="new-chat-btn" onClick={startNewChat}>
+              <button className="new-chat-btn" onClick={() => { startNewChat(); setIsSidebarOpen(false); }}>
                 {language === 'hi' ? '+ नया' : '+ New'}
               </button>
             </div>
@@ -119,24 +144,45 @@ const SchemeChatbot = () => {
                 <div 
                   key={session._id} 
                   className={`history-item ${activeSessionId === session._id ? 'active' : ''}`}
-                  onClick={() => loadSession(session._id)}
+                  onClick={() => { loadSession(session._id); setIsSidebarOpen(false); }}
                   title={session.title}
                 >
-                  💬 {session.title}
+                  <span className="history-title">💬 {session.title}</span>
+                  <button 
+                    className="delete-history-btn" 
+                    onClick={(e) => handleDeleteSession(session._id, e)}
+                    title={language === 'hi' ? 'डिलीट करें' : 'Delete'}
+                  >
+                    🗑️
+                  </button>
                 </div>
               ))}
               {history.length === 0 && (
-                <div style={{ padding: '10px', fontSize: '0.8rem', color: 'var(--color-text-light)' }}>
+                <div style={{ padding: '10px', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
                   {language === 'hi' ? 'कोई पुरानी चैट नहीं' : 'No recent chats'}
                 </div>
               )}
             </div>
+            {history.length > 0 && (
+              <button className="clear-all-btn" onClick={handleClearHistory}>
+                {language === 'hi' ? 'सभी डिलीट करें' : 'Clear All'}
+              </button>
+            )}
           </div>
 
           {/* Main Chat Area */}
           <div className="chatbot-main">
             <div className="chat-header">
-              <h4>{language === 'hi' ? 'योजनासेतु एआई असिस्टेंट' : 'YojanaSetu AI Assistant'}</h4>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <button 
+                  className="menu-toggle-btn" 
+                  onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+                  title={language === 'hi' ? 'हिस्ट्री देखें' : 'View History'}
+                >
+                  ☰
+                </button>
+                <h4>{language === 'hi' ? 'योजनासेतु एआई' : 'YojanaSetu AI'}</h4>
+              </div>
               <button className="close-btn" onClick={() => setIsOpen(false)}>×</button>
             </div>
             

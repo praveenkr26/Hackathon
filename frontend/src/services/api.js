@@ -43,7 +43,9 @@ export const aiAPI = {
   processOCR: (data) => api.post('/ai/ocr', data),
   chat: (data) => api.post('/ai/chat', data),
   getChatHistory: () => api.get('/ai/chat/history'),
-  getChatSession: (sessionId) => api.get(`/ai/chat/${sessionId}`)
+  getChatSession: (sessionId) => api.get(`/ai/chat/${sessionId}`),
+  deleteChatSession: (sessionId) => api.delete(`/ai/chat/${sessionId}`),
+  clearChatHistory: () => api.delete('/ai/chat/history/all')
 };
 
 // ─── Health ──────────────────────────────────────────────────

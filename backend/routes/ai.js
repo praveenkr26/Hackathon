@@ -6,7 +6,9 @@ const {
   processDocument,
   chatWithGemini,
   getChatHistory,
-  getChatSession
+  getChatSession,
+  deleteChatSession,
+  clearChatHistory
 } = require('../controllers/aiController');
 
 router.post('/intent', classifyIntent);
@@ -17,5 +19,7 @@ router.post('/ocr', processDocument);
 router.post('/chat', chatWithGemini);
 router.get('/chat/history', getChatHistory);
 router.get('/chat/:sessionId', getChatSession);
+router.delete('/chat/history/all', clearChatHistory);
+router.delete('/chat/:sessionId', deleteChatSession);
 
 module.exports = router;
