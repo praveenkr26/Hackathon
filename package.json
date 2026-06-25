@@ -4,7 +4,7 @@
   "description": "Monorepo configuration for YojanaSetu deployment on Render",
   "main": "backend/server.js",
   "scripts": {
-    "postinstall": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "postinstall": "npm install --prefix backend && npm install --prefix frontend --include=dev && npm run build --prefix frontend",
     "build": "echo 'Build handled by postinstall'",
     "start": "node backend/server.js"
   },
