@@ -13,8 +13,6 @@ const matchSchema = Joi.object({
   disability: Joi.boolean().optional()
 });
 
-const schemesData = require('../seeds/real_schemes_atlas.json');
-
 /**
  * GET /api/schemes
  * List all schemes with optional search, filter, and pagination
@@ -27,34 +25,41 @@ const getAllSchemes = async (req, res) => {
       category,
       status = 'active',
       search,
-      featured
+      featured,
+      sort = '-featured -viewCount'
     } = req.query;
 
-    let filtered = schemesData.filter(s => s.status === status);
+    const query = { status };
+    if (category) query.category = category;
+    if (featured !== undefined) query.featured = featured === 'true';
 
-    if (category) {
-      filtered = filtered.filter(s => s.category === category);
-    }
-    if (featured !== undefined) {
-      const isFeatured = featured === 'true';
-      filtered = filtered.filter(s => s.featured === isFeatured);
-    }
+    let schemesQuery;
+
     if (search && search.trim()) {
-      const lowerSearch = search.toLowerCase();
-      filtered = filtered.filter(s => 
-        s.name.toLowerCase().includes(lowerSearch) ||
-        s.description.toLowerCase().includes(lowerSearch) ||
-        (s.tags && s.tags.some(t => t.toLowerCase().includes(lowerSearch)))
-      );
+      try {
+        schemesQuery = Scheme.find({ ...query, $text: { $search: search } })
+          .sort({ score: { $meta: 'textScore' } });
+      } catch {
+        schemesQuery = Scheme.find({
+          ...query,
+          $or: [
+            { name: { $regex: search, $options: 'i' } },
+            { description: { $regex: search, $options: 'i' } },
+            { tags: { $in: [new RegExp(search, 'i')] } }
+          ]
+        }).sort(sort);
+      }
+    } else {
+      schemesQuery = Scheme.find(query).sort(sort);
     }
 
-    const total = filtered.length;
     const skip = (parseInt(page) - 1) * parseInt(limit);
-    const paginated = filtered.slice(skip, skip + parseInt(limit));
+    const total = await Scheme.countDocuments(query);
+    const schemes = await schemesQuery.skip(skip).limit(parseInt(limit));
 
     res.json({
       success: true,
-      data: paginated,
+      data: schemes,
       pagination: {
         page: parseInt(page),
         limit: parseInt(limit),
@@ -74,25 +79,20 @@ const getAllSchemes = async (req, res) => {
  */
 const getStats = async (req, res) => {
   try {
-    const activeSchemes = schemesData.filter(s => s.status === 'active');
-    
-    // Group by category
-    const categoryCount = {};
-    activeSchemes.forEach(s => {
-      categoryCount[s.category] = (categoryCount[s.category] || 0) + 1;
-    });
-    
-    const categoryStats = Object.keys(categoryCount).map(key => ({
-      _id: key,
-      count: categoryCount[key]
-    })).sort((a, b) => b.count - a.count);
-
-    const featuredCount = activeSchemes.filter(s => s.featured).length;
+    const [totalActive, categoryStats, featuredCount] = await Promise.all([
+      Scheme.countDocuments({ status: 'active' }),
+      Scheme.aggregate([
+        { $match: { status: 'active' } },
+        { $group: { _id: '$category', count: { $sum: 1 } } },
+        { $sort: { count: -1 } }
+      ]),
+      Scheme.countDocuments({ featured: true })
+    ]);
 
     res.json({
       success: true,
       data: {
-        totalSchemes: activeSchemes.length,
+        totalSchemes: totalActive,
         featuredSchemes: featuredCount,
         categories: categoryStats.length,
         beneficiaries: '10+ Crore',
@@ -111,20 +111,15 @@ const getStats = async (req, res) => {
  */
 const getCategories = async (req, res) => {
   try {
-    const activeSchemes = schemesData.filter(s => s.status === 'active');
-    const categoryCount = {};
-    activeSchemes.forEach(s => {
-      categoryCount[s.category] = (categoryCount[s.category] || 0) + 1;
-    });
-    
-    const categories = Object.keys(categoryCount).map(key => ({
-      category: key,
-      count: categoryCount[key]
-    })).sort((a, b) => b.count - a.count);
+    const categories = await Scheme.aggregate([
+      { $match: { status: 'active' } },
+      { $group: { _id: '$category', count: { $sum: 1 } } },
+      { $sort: { count: -1 } }
+    ]);
 
     res.json({
       success: true,
-      data: categories
+      data: categories.map(c => ({ category: c._id, count: c.count }))
     });
   } catch (error) {
     logger.error('getCategories error:', error);
@@ -139,20 +134,20 @@ const getCategories = async (req, res) => {
 const getSchemeById = async (req, res) => {
   try {
     const { id } = req.params;
-    
-    // Check if ID matches an oid
-    let scheme = schemesData.find(s => s._id && s._id.$oid === id);
-    if (!scheme) {
-      // Fallback: Check if it's the 1 old scheme ID, or search by name
-      scheme = schemesData.find(s => s.id === id || s.name === id);
-    }
+    const scheme = await Scheme.findById(id);
 
     if (!scheme) {
       return res.status(404).json({ success: false, error: 'Scheme not found' });
     }
 
+    // Increment view count
+    await Scheme.findByIdAndUpdate(id, { $inc: { viewCount: 1 } });
+
     res.json({ success: true, data: scheme });
   } catch (error) {
+    if (error.name === 'CastError') {
+      return res.status(404).json({ success: false, error: 'Invalid scheme ID' });
+    }
     logger.error('getSchemeById error:', error);
     res.status(500).json({ success: false, error: 'Failed to fetch scheme' });
   }
