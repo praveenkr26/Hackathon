@@ -30,7 +30,8 @@
 
 
   ### 3. Real-time AI Assistant Chatbot
-  <img src="https://via.placeholder.com/800x450.png?text=Screenshot+3:+AI+Chatbot+with+Speech" alt="Chatbot Screenshot" width="800" />
+ <img width="636" height="292" alt="image" src="https://github.com/user-attachments/assets/e6c5245b-85db-4a6e-846b-9689220394ea" />
+
 
 </div>
 
